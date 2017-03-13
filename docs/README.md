@@ -1,6 +1,6 @@
 
 
-__Minimum Viable Product__
+### Minimum Viable Product - Kickstarter Clone
   * Hosting on Heroku
   * New account creation, login, and guest/demo login
   * A production README
@@ -9,15 +9,17 @@ __Minimum Viable Product__
   * Search
   * Categories / Discover feature
 
-__Design Documents:__
-  * [WireFrames](https://github.com/jamesevers/punch_starter/tree/master/docs/wireframes)
-  * [React Components](https://github.com/jamesevers/punch_starter/tree/master/docs/component-hierarchy.md)
-  * [Sample State](https://github.com/jamesevers/punch_starter/tree/master/docs/sample-state.md)
-  * [Database Schema](https://github.com/jamesevers/punch_starter/tree/master/docs/schema.md)
-  * [API Endpoints](https://github.com/jamesevers/punch_starter/tree/master/docs/api-endpoints.md)
+
+### Design Documents:
+  * [WireFrames](https://github.com/mcittar/fullstack_proposal/tree/master/docs/wireframes)
+  * [React Components](https://github.com/mcittar/fullstack_proposal/blob/master/docs/component-hierarchy.md)
+  * [Sample State](https://github.com/mcittar/fullstack_proposal/blob/master/docs/sample-state.md)
+  * [Database Schema](https://github.com/mcittar/fullstack_proposal/blob/master/docs/schema.md)
+  * [API Endpoints](https://github.com/mcittar/fullstack_proposal/blob/master/docs/api-endpoints.md)
 
 
-__Implementation Timeline__
+
+### Implementation Timeline
 
 ### Phase 1: Back-end configuration and front-end user authentication (2 days)
 
