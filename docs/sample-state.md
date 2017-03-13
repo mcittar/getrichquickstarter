@@ -30,31 +30,41 @@
  },
  projectDetail: {
    id: 1,
+   creator_id: 1,
    name: "Shoom-Woah!",
    video_link: /*...*/,
    organization: /*...*/,
-   address: /*...*/,
    city: /*...*/,
    state: /*...*/,
    description: /*...*/,
-   currentFunding: 2353,
    funding_goal: 5000,
-   pledge_levels: {
+   tags: {
+     1: {
+       id: 1,
+       tag: "Cleaning"
+     }
+   },
+   rewards: {
         1: {
-          project_id: 123,
+          project_id: 1,
           amount: /*...*/,
           title: /*...*/,
           description: "Longer description text here",
-          delivery_date: /*...*/
+          delivery_date: /*...*/,
+          limit: 20
         },
       },
    currentBackers: {
      1: {
        id: 1,
        user_id: 1,
-       contribution: 50
      }
    },
-   funding_goal_achieved: false
+   comments: {
+     1: {
+       user_id: 23,
+       body: /*...*/
+     }
+   }
  }
 }

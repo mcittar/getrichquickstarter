@@ -19,18 +19,20 @@
 
 ### Projects
 
-- `GET /api/projects`
+- `GET /api/projects` (index)
 - `POST /api/projects`
 - `GET /api/projects/:id`
 - `PATCH /api/projects/:id`
 - `DELETE /api/projects/:id`
 
-### Backing
+### Comments:
 
-- `POST /api/projects/:id/backing`
-- `DELETE /api/projects/:id/backing`
-- `PATCH /api/projects/:id/backing`
+- `GET /api/comments/:id`
+- `POST /api/comments`
+- `PATCH /api/comments/:id`
+- `DELETE /api/comments/:id`
 
 ### Rewards
+
 - `GET /api/projects/:id/rewards`
 - `POST api/projects/:id/rewards`

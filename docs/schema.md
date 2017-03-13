@@ -18,19 +18,22 @@ zip             | string    |
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
+creator_id  | integer   | not null, foreign key (references users), indexed
+city        | integer   | not null, primary key
+state       | integer   | not null, primary key
 title       | string    | not null
 video_url   | string    | not null
 project_pic | string    | not null
 description | text      | not null
 funding_goal| integer   | not null
-creator_id  | integer   | not null, foreign key (references users), indexed
 
-## pledges
+## rewards
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 project_id  | integer   | not null, foreign key (references users), indexed
 amount      | string    | not null
+limit       | string    | not null
 title       | string    | not null
 description | string    | not null
 delivery    | string    | not null
@@ -43,11 +46,22 @@ author_id   | integer   | not null, foreign key (references users), indexed
 project_id  | integer   | not null, foreign key (references projects), indexed
 body        | string    | not null
 
-
 ## contributions
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-project_id  | integer   | not null, foreign key (references projects), indexed
+reward_id   | integer   | not null, foreign key (references projects), indexed
 backer_id   | integer   | not null, foreign key (references users), indexed
-amount      | integer   | not null
+
+## tags
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
+tag         | integer   | not null
+
+## taggings
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
+project_id  | integer   | not null, foreign key (references projects), indexed
+tag_id     | integer   | not null, foreign key (references tags), indexed
