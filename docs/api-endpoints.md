@@ -15,7 +15,6 @@
 ### Users
 
 - `POST /api/users`
-- `PATCH /api/users`
 
 ### Projects
 
@@ -27,10 +26,10 @@
 
 ### Comments:
 
-- `GET /api/comments/:id`
-- `POST /api/comments`
-- `PATCH /api/comments/:id`
-- `DELETE /api/comments/:id`
+- `GET /api/projects/:id/comments/:id`
+- `POST /api/projects/:id/comments`
+- `PATCH /api/projects/:id/comments/:id`
+- `DELETE /api/projects/:id/comments/:id`
 
 ### Rewards
 

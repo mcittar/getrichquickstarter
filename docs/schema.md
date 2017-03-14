@@ -8,19 +8,14 @@ email           | string    | not null, indexed, unique
 password_digest | string    | not null
 session_token   | string    | not null, indexed, unique
 name            | string    | not null
-street_address  | string    |
-city            | string    |
-state           | string    |
-zip             | string    |
-
 
 ## projects
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 creator_id  | integer   | not null, foreign key (references users), indexed
-city        | integer   | not null, primary key
-state       | integer   | not null, primary key
+city        | integer   | not null
+state       | integer   | not null
 title       | string    | not null
 video_url   | string    | not null
 project_pic | string    | not null
@@ -32,8 +27,8 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 project_id  | integer   | not null, foreign key (references users), indexed
-amount      | string    | not null
-limit       | string    | not null
+amount      | float     | not null
+limit       | int       | not null
 title       | string    | not null
 description | string    | not null
 delivery    | string    | not null
@@ -64,4 +59,4 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 project_id  | integer   | not null, foreign key (references projects), indexed
-tag_id     | integer   | not null, foreign key (references tags), indexed
+tag_id      | integer   | not null, foreign key (references tags), indexed
