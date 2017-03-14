@@ -1,7 +1,7 @@
 {
  currentUser: {
    id: 1,
-   username: "mcittar"
+   name: "mcittar"
  },
  errors: {
    signUp: ["username can't be blank", "password is too short"],
