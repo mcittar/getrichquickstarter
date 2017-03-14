@@ -1,8 +1,9 @@
 import React from 'react';
+import NavBar from './navbar/navbar_container';
 
 const App = ({ children }) => (
   <div>
-    <h1>GetRichQuickStarter</h1>
+    <NavBar />
     { children }
   </div>
 );

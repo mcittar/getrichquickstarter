@@ -1,14 +1,11 @@
 {
- currentUser: {
-   id: 1,
-   name: "mcittar"
- },
- errors: {
-   signUp: ["username can't be blank", "password is too short"],
-   signIn: [],
-   project: ['body cant be blank!'],
- },
- projects: {
+  session: {
+    currentUser: {
+      name: "mcittar"
+      errors: ["username can't be blank", "password is too short"]
+    },
+  }
+  projects: {
    1: {
      id: 1,
      name: "Shoom-Woah!",
@@ -18,24 +15,24 @@
      zip: 37501,
      project_pic: /*...*/
    }
- },
- projectDetail: {
-   id: 1,
-   creator_id: 1,
-   name: "Shoom-Woah!",
-   video_link: /*...*/,
-   organization: /*...*/,
-   city: /*...*/,
-   state: /*...*/,
-   description: /*...*/,
-   funding_goal: 5000,
-   tags: {
-     1: {
-       id: 1,
-       tag: "Cleaning"
-     }
-   },
-   rewards: {
+  },
+  projectDetail: {
+    id: 1,
+    creator_id: 1,
+    name: "Shoom-Woah!",
+    video_link: /*...*/,
+    organization: /*...*/,
+    city: /*...*/,
+    state: /*...*/,
+    description: /*...*/,
+    funding_goal: 5000,
+    tags: {
+      1: {
+        id: 1,
+        tag: "Cleaning"
+      }
+    },
+    rewards: {
         1: {
           amount: /*...*/,
           title: /*...*/,
@@ -54,6 +51,7 @@
        userName: "Job",
        body: /*...*/
      }
-   }
+   },
+   errors: ['body cant be blank!']
  }
 }
