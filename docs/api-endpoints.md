@@ -1,6 +1,5 @@
 # API Endpoints
 
-
 ### Root
 
 - `GET /` - hits web app home

@@ -11,11 +11,11 @@
 
 
 ### Design Documents:
-  * [WireFrames](https://github.com/mcittar/fullstack_proposal/tree/master/docs/wireframes)
-  * [React Components](https://github.com/mcittar/fullstack_proposal/blob/master/docs/component-hierarchy.md)
-  * [Sample State](https://github.com/mcittar/fullstack_proposal/blob/master/docs/sample-state)
-  * [Database Schema](https://github.com/mcittar/fullstack_proposal/blob/master/docs/schema.md)
-  * [API Endpoints](https://github.com/mcittar/fullstack_proposal/blob/master/docs/api-endpoints.md)
+  * [WireFrames](https://github.com/mcittar/fullstack_kickstarter/tree/master/docs/wireframes)
+  * [React Components](https://github.com/mcittar/fullstack_kickstarter/blob/master/docs/component-hierarchy.md)
+  * [Sample State](https://github.com/mcittar/fullstack_kickstarter/blob/master/docs/sample-state)
+  * [Database Schema](https://github.com/mcittar/fullstack_kickstarter/blob/master/docs/schema.md)
+  * [API Endpoints](https://github.com/mcittar/fullstack_kickstarter/blob/master/docs/api-endpoints.md)
 
 
 
