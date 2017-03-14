@@ -29,11 +29,13 @@ class NavBar extends React.Component {
     }
 
     return (
-      <ul>
-        <li><Link to='/discover'>Discover</Link></li>
-        <li><Link to='/'><h3>GetRichQuickStarter</h3></Link></li>
-        <li>{ rightNav }</li>
-      </ul>
+      <nav>
+        <ul>
+          <li><Link to='/discover'>Discover</Link></li>
+          <li><Link to='/'><h3>GetRichQuickStarter</h3></Link></li>
+          <li>{ rightNav }</li>
+        </ul>
+      </nav>
     );
   }
 }
