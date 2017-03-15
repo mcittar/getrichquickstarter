@@ -1,7 +1,8 @@
 @import "base/colors.scss";
+@import "base/fonts.scss";
 
 .auth-form-section {
-  border: 1px solid green;
+  height: 100%;
   background: $cream-gray;
   display: flex;
   align-items: center;
@@ -10,10 +11,37 @@
 }
 
 .auth-form {
+  align-self: flex-start;
+  width: 33.3333%;
   flex-direction: column;
   background: white;
-  border: 1px solid black;
+  border: 1px solid $light-gray;
   padding: 10px;
   display: flex;
   align-items: center;
+  margin-top: 60px;
+}
+
+.auth-form > h2 {
+  align-self: flex-start;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-form > button {
+  margin-top: 50px;
+  color: white;
+}
+
+.auth-errors {
+  background-color: $rose-red;
+  border-radius: 12px;
+}
+
+.auth-errors > li {
+  padding: 10px;
+  font-family: $sans-serif;
+  color: white;
 }

@@ -11,6 +11,13 @@ class SessionForm extends React.Component {
     };
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.location.pathname !== this.props.location.pathname) {
+      this.clearData();
+      this.props.clearErrors();
+    }
+  }
+
   componentDidUpdate() {
 		this.redirectIfLoggedIn();
 	}
@@ -33,23 +40,48 @@ class SessionForm extends React.Component {
     this.props.processForm(user);
   }
 
+  clearData(){
+    this.setState({
+      name: "",
+      email: "",
+      password: ""
+    });
+  }
+
   render(){
     let name;
+    let title;
+    let button;
     if (this.props.formType === 'login') {
+      title = "Log in";
       name = "";
+      button = 'Log me in!';
     } else {
-      name = <input placeholder="Username" onChange={ this.updateAttributes('name') }/>;
+      title = "Sign up";
+      name = <input placeholder="Username" value={ this.state.name } onChange={ this.updateAttributes('name') }/>;
+      button = 'Sign me up!';
+    }
+
+    let errors;
+    if (this.props.errors !== []) {
+      errors = this.props.errors.map(error => {
+        return <li key={ error }>{ error }</li>;
+      });
+    } else {
+      errors = "";
     }
 
     return(
       <section className='auth-form-section'>
         <form className='auth-form'>
-          <h2>{ this.props.formType }</h2>
-          <p>{ this.props.errors }</p>
+          <h2 className='auth-title'>{ title }</h2>
+          <section>
+            <ul className='auth-errors'>{ errors }</ul>
+          </section>
             { name }
-            <input placeholder="Email" onChange={ this.updateAttributes('email') }/>
-            <input type='password' placeholder="Password" onChange={ this.updateAttributes('password') }/>
-          <button onClick={ this.handleSubmit.bind(this) }>{ this.props.formType }</button>
+            <input placeholder="Email" value={ this.state.email } onChange={ this.updateAttributes('email') }/>
+            <input type='password' value={ this.state.password } placeholder="Password" onChange={ this.updateAttributes('password') }/>
+          <button onClick={ this.handleSubmit.bind(this) }>{ button }</button>
         </form>
       </section>
     );
