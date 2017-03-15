@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  creator_id: 1
+  city: MyString
+  state: MyString
+  title: MyString
+  organization: MyString
+  video_url: MyString
+  project_pic: MyString
+  description: MyText
+  funding_goal: 1
+
+two:
+  creator_id: 1
+  city: MyString
+  state: MyString
+  title: MyString
+  organization: MyString
+  video_url: MyString
+  project_pic: MyString
+  description: MyText
+  funding_goal: 1

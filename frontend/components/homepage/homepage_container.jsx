@@ -1,4 +1,4 @@
-import Homepage from './navbar';
+import Homepage from './homepage';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {

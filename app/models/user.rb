@@ -3,6 +3,8 @@ class User < ApplicationRecord
   validates :email, :name, :session_token, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
+  has_many :projects
+
   attr_reader :password
 
   before_validation :ensure_token
