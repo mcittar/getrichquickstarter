@@ -17,6 +17,7 @@ creator_id  | integer   | not null, foreign key (references users), indexed
 city        | integer   | not null
 state       | integer   | not null
 title       | string    | not null
+organization| string    | not null
 video_url   | string    | not null
 project_pic | string    | not null
 description | text      | not null
