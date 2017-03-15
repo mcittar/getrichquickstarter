@@ -22,17 +22,31 @@ class NavBar extends React.Component {
     } else {
       rightNav = (
         <ul>
-          <li><Link to='/signup'>Sign Up</Link></li>
           <li><Link to='/login'>Log In</Link></li>
+          <li><Link to='/signup'>Sign Up</Link></li>
         </ul>
       );
     }
 
     return (
-      <nav>
-        <ul>
-          <li><Link to='/discover'>Discover</Link></li>
-          <li><Link to='/'><h3>GetRichQuickStarter</h3></Link></li>
+      <nav className="main-nav">
+        <ul className='left-nav'>
+          <li><Link to='/discover'>
+            <i className="fa fa-compass" aria-hidden="true"></i>
+            <div className='nav-discover'>Discover</div>
+          </Link></li>
+          <li><Link to='/discover'>Create a Project</Link></li>
+        </ul>
+        <ul className="center-nav">
+          <li><Link to='/'>
+            <div className='logo-wrapper'>
+              <div className='left-logo'>GetRichQuick</div>
+              <div className='right-logo'>Starter</div>
+            </div>
+          </Link></li>
+        </ul>
+        <ul className='right-nav'>
+          <li><i className="fa fa-search"></i></li>
           <li>{ rightNav }</li>
         </ul>
       </nav>
