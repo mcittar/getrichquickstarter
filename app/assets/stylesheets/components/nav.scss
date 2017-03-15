@@ -57,6 +57,7 @@
 }
 
 .right-nav > li > ul > li {
+
 	margin-right: 18px;
   display: flex;
   align-items: center;
@@ -73,6 +74,10 @@
 	padding: 7px 9px;
 }
 
+// .login:hover, .logout:hover, .discover-wrapper:hover, .create:hover, .sign-up:hover {
+// 	border-bottom: 3px solid $kick-green;
+// }
+
 .center-nav {
   display: flex;
   align-items: center;
@@ -81,7 +86,7 @@
 .logo-wrapper {
 	display: flex;
 	align-items: center;
-	margin: 10px 0;
+	padding: 10px 0;
 }
 
 .right-logo, .left-logo {

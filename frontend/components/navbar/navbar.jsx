@@ -21,7 +21,7 @@ class NavBar extends React.Component {
       rightNav = (
         <ul>
           <li className="login"><Link to='/login'>Log In</Link></li>
-          <li><Link to='/signup'>Sign Up</Link></li>
+          <li className='signup'><Link to='/signup'>Sign Up</Link></li>
         </ul>
       );
     }
@@ -37,7 +37,7 @@ class NavBar extends React.Component {
               </div>
             </Link>
           </li>
-          <li>Create a Project</li>
+          <li className="create ">Create a Project</li>
         </ul>
         <ul className="center-nav">
           <li><Link to='/'>
