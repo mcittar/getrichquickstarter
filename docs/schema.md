@@ -19,6 +19,7 @@ state       | integer   | not null
 title       | string    | not null
 organization| string    | not null
 video_url   | string    | not null
+end_date    | string    | not null
 project_pic | string    | not null
 description | text      | not null
 funding_goal| integer   | not null

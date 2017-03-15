@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20170315205335) do
     t.string   "city",         null: false
     t.string   "state",        null: false
     t.string   "title",        null: false
+    t.string   "end_date",     null: false
     t.string   "organization", null: false
     t.string   "video_url",    null: false
     t.string   "project_pic",  null: false

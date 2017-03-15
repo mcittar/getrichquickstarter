@@ -1,6 +1,6 @@
 @projects.each do |project|
   json.set! project.id do
-    json.extract! project, :id, :title, :city, :state,
+    json.extract! project, :id, :title, :city, :state, :end_date,
                   :organization, :project_pic, :description
     json.user project.user.name
   end
