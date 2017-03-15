@@ -1,0 +1,19 @@
+@import "base/colors.scss";
+
+.auth-form-section {
+  border: 1px solid green;
+  background: $cream-gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 7px 16px -3px rgba(50, 50, 50, 0.15);
+}
+
+.auth-form {
+  flex-direction: column;
+  background: white;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}

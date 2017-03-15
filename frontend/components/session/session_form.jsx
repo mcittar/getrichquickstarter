@@ -42,14 +42,13 @@ class SessionForm extends React.Component {
     }
 
     return(
-      <section>
-        <h2>{ this.props.formType }</h2>
-        <Link to={ this.props.formType === 'login' ? '/signup' : '/login' } />
-        <p>{ this.props.errors }</p>
-        <form>
-          { name }
-          <input placeholder="Email" onChange={ this.updateAttributes('email') }/>
-          <input type='password' placeholder="Password" onChange={ this.updateAttributes('password') }/>
+      <section className='auth-form-section'>
+        <form className='auth-form'>
+          <h2>{ this.props.formType }</h2>
+          <p>{ this.props.errors }</p>
+            { name }
+            <input placeholder="Email" onChange={ this.updateAttributes('email') }/>
+            <input type='password' placeholder="Password" onChange={ this.updateAttributes('password') }/>
           <button onClick={ this.handleSubmit.bind(this) }>{ this.props.formType }</button>
         </form>
       </section>
