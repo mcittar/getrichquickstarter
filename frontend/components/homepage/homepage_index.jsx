@@ -18,13 +18,18 @@ class HomepageIndex extends React.Component {
     });
 
     return(
-      <section>
+      <section className='home'>
 
-        <section>
-          <ul>
+        <section className='home-video-container'>
+
+        </section>
+
+        <section className='projects-container'>
+          <ul className='projects-list'>
             { projects }
           </ul>
         </section>
+        
       </section>
     );
   }

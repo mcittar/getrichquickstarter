@@ -1,0 +1,29 @@
+.projects-container {
+  width: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.projects-list {
+  display: flex;
+  align-items: center;
+}
+
+.projects-list > li {
+  width: 28%;
+  border: 1px solid green;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-blurb {
+  border: 1px solid blue;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.blurb-image{
+  border: 1px solid orange;
+}
