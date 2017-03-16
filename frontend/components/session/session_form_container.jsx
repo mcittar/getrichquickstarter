@@ -10,9 +10,15 @@ const mapStateToProps = (state, ownProps) => ({
 });
 
 const mapDispatchToProps = (dispatch, ownProps) => {
+  const demo = {
+    name: 'demo',
+    email: 'demo@gmail.com',
+    password: 'demopassword'
+  };
   const formType = ownProps.location.pathname.slice(1);
   const processForm = (formType === 'login') ? login : signup;
   return {
+    demoLogin: () => dispatch(login(demo)),
     processForm: user => dispatch(processForm(user)),
     clearErrors: () => dispatch(receiveErrors([]))
   };

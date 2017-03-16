@@ -15,7 +15,7 @@ class NavBar extends React.Component {
     let rightNav;
     if (this.props.currentUser) {
       rightNav = (
-          <button className='logout' onClick={ this.userLogout.bind(this) }>Logout</button>
+          <span className='logout' onClick={ this.userLogout.bind(this) }>Logout</span>
       );
     } else {
       rightNav = (

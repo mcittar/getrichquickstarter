@@ -5,6 +5,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.home-video-container {
+  height: 600px;
+  width: 100%;
+  background-image: image-url('city-overview.jpg');
+  background-size: cover;
 }
 
 .projects-container {

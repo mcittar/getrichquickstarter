@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectBlurb from './project_blurb';
-import Masonry from 'react-masonry-component';
+import { Link } from 'react-router';
 
 class HomepageIndex extends React.Component {
   constructor(props){
@@ -22,7 +22,6 @@ class HomepageIndex extends React.Component {
       <section className='home'>
 
         <section className='home-video-container'>
-
         </section>
 
         <section className='projects-container'>
@@ -30,7 +29,6 @@ class HomepageIndex extends React.Component {
             <ul className='projects-list'>
               { projects }
             </ul>
-
 
         </section>
 

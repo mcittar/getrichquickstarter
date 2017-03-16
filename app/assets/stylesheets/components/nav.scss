@@ -17,7 +17,7 @@
 	justify-content: space-between;;
 	align-items: stretch;
 	padding: 6px 0;
-	border-bottom: 1px solid $light-gray;
+	// border-bottom: 1px solid $light-gray;
 }
 
 .left-nav,
@@ -74,8 +74,10 @@
 	padding: 7px 9px;
 }
 
-// .login:hover, .logout:hover, .discover-wrapper:hover, .create:hover, .sign-up:hover {
-// 	border-bottom: 3px solid $kick-green;
+// .login:hover, .logout:hover, .nav-discover:hover, .create:hover, .sign-up:hover {
+// 	box-sizing: border-box;
+// 	text-decoration: underline;
+// 	border-bottom: 3px solid $kick-green
 // }
 
 .center-nav {

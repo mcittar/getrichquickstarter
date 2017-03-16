@@ -30,9 +30,19 @@
   margin-bottom: 20px;
 }
 
-.auth-form > button {
+.auth-submit {
+  color: white;
+}
+
+.auth-demo-button {
   margin-top: 50px;
   color: white;
+  background-color: $deep-blue;
+}
+
+.auth-form > span {
+  color: $light-gray;
+  font-style: italic;
 }
 
 .auth-errors {
