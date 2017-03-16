@@ -10,18 +10,21 @@ class ProjectBlurb extends React.Component {
     return(
       <div className='project-blurb'>
 
-        <div className='blurb-header'>
-          <img className='blurb-image' src={ project.project_pic }/>
-        </div>
+        <section className='top-wrapper'>
 
-        <div className='blurb-middle'>
-          <span>{ project.title }</span>
-          <span>{ project.user }</span>
-          <span>{ project.short_description }</span>
-        </div>
+          <div className='blurb-header'>
+            <img className='blurb-image' src={ project.project_pic }/>
+          </div>
+
+          <div className='blurb-middle'>
+            <strong>{ project.title }</strong>
+            <h3 className='blurb-org'>{ project.organization }</h3>
+            <h3 className='blurb-description'>{ project.short_description }</h3>
+          </div>
+
+        </section>
 
         <div className='blurb-footer'>
-          <span>{ project.organization }</span>
           <span>{ project.city }</span>
           <span>{ project.state }</span>
           <span>{ project.end_date }</span>

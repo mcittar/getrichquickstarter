@@ -18,6 +18,19 @@ h2 {
 	margin-bottom: 10px;
 }
 
+h3 {
+	font-family: catamaran-light;
+	font-size: 13px;
+	font-weight: none;
+	line-height: 17px;
+}
+
+strong {
+	font-size: 12px;
+	font-weight: bolder;
+	font-family: $sans-serif;
+}
+
 img {
 	width: 100%;
 	height: 100%;

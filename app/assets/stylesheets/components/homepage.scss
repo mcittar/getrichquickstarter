@@ -1,32 +1,74 @@
-.projects-container {
-  width: 100%;
-  border: 1px solid red;
+@import "base/colors.scss";
+@import "base/fonts.scss";
+
+.home {
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  width: 1080px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 .projects-list {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   align-items: center;
 }
 
 .projects-list > li {
+  margin: 18px;
   width: 28%;
-  border: 1px solid green;
   display: flex;
   flex-wrap: wrap;
-  height: 440px;
-  width: 324px;
+  height: 460px;
+  width: 312px;
+}
+
+.top-wrapper {
+  height: 80%;
 }
 
 .project-blurb {
-  margin: 20px;
-  border: 1px solid blue;
+  border: 1px solid $light-gray;
+  border-radius: 9px;
   flex-direction: column;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.blurb-header, .blurb-middle, .blurb-footer {
+  width: auto;
+}
+
+.blurb-header {
+  height: 55%;
 }
 
 .blurb-image{
-  border: 1px solid orange;
+  border-radius: 9px 9px 0 0;
+}
+
+.blurb-middle {
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.blurb-org {
+  margin-top: 4px;
+}
+
+.blurb-description {
+  margin-top: 18px;
+}
+
+.blurb-footer {
+  border-radius: 9px;
+  align-self: flex-end;
 }

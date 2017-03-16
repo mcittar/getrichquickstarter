@@ -5,3 +5,18 @@ $sans-serif: arial, helvetica, sans-serif;
   font-family: 'logo';
   src: font-url('logo.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'cabin';
+  src: font-url('Cabin-Regular-TTF.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'catamaran-extra-light';
+  src: font-url('Catamaran-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'catamaran-light';
+  src: font-url('Catamaran-Light.ttf') format('truetype');
+}
