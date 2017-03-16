@@ -15,9 +15,12 @@
   border: 1px solid green;
   display: flex;
   flex-wrap: wrap;
+  height: 440px;
+  width: 324px;
 }
 
 .project-blurb {
+  margin: 20px;
   border: 1px solid blue;
   flex-direction: column;
   display: flex;

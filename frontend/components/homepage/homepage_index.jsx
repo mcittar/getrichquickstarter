@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectBlurb from './project_blurb';
+import Masonry from 'react-masonry-component';
 
 class HomepageIndex extends React.Component {
   constructor(props){
@@ -25,11 +26,14 @@ class HomepageIndex extends React.Component {
         </section>
 
         <section className='projects-container'>
-          <ul className='projects-list'>
-            { projects }
-          </ul>
+
+            <ul className='projects-list'>
+              { projects }
+            </ul>
+
+
         </section>
-        
+
       </section>
     );
   }

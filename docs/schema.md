@@ -10,19 +10,20 @@ session_token   | string    | not null, indexed, unique
 name            | string    | not null, unique
 
 ## projects
-column name | data type | details
-------------|-----------|-----------------------
-id          | integer   | not null, primary key
-creator_id  | integer   | not null, foreign key (references users), indexed
-city        | integer   | not null
-state       | integer   | not null
-title       | string    | not null
-organization| string    | not null
-video_url   | string    | not null
-end_date    | string    | not null
-project_pic | string    | not null
-description | text      | not null
-funding_goal| integer   | not null
+column name       | data type | details
+------------------|-----------|-----------------------
+id                | integer   | not null, primary key
+creator_id        | integer   | not null, foreign key (references users), indexed
+city              | integer   | not null
+state             | integer   | not null
+title             | string    | not null
+organization      | string    | not null
+video_url         | string    | not null
+end_date          | string    | not null
+project_pic       | string    | not null
+description       | text      | not null
+short_description | text      | not null
+funding_goal      | integer   | not null
 
 ## rewards
 column name | data type | details

@@ -10,7 +10,7 @@
      id: 1,
      creator_username: "Vince Vincent",
      title: "Shoom-Woah!",
-     description: "A great item, guaranteed to make you feel good about yourself!",
+     short_description: "A great item, guaranteed to make you feel good about yourself!",
      city: "Memphis",
      state: "TN",
      organization: /*...*/,

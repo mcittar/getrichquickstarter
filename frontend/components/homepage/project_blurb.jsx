@@ -17,7 +17,7 @@ class ProjectBlurb extends React.Component {
         <div className='blurb-middle'>
           <span>{ project.title }</span>
           <span>{ project.user }</span>
-          <span>{ project.description }</span>
+          <span>{ project.short_description }</span>
         </div>
 
         <div className='blurb-footer'>
