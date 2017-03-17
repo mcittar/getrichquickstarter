@@ -9,7 +9,8 @@ class Api::ProjectsController < ApplicationController
   end
 
   def show
-
+    @project = Project.find(params[:id])
+    render :show
   end
 
   def edit
@@ -23,7 +24,7 @@ class Api::ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:creator_id, :city, :state, :title,
+    params.require(:project).permit(:id, :creator_id, :city, :state, :title,
                                     :organization, :video_url, :project_pic,
                                     :description, :funding_goal, :end_date,
                                     :short_description)

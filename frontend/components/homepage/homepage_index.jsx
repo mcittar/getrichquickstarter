@@ -21,8 +21,7 @@ class HomepageIndex extends React.Component {
     return(
       <section className='home'>
 
-        <section className='home-video-container'>
-        </section>
+        <section className='home-video-container'></section>
 
         <section className='projects-container'>
 

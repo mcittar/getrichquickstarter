@@ -17,7 +17,7 @@ u8 = User.create(name: 'Armand', email: 'armand@gmail.com', password: 'password'
 u9 = User.create(name: 'Katrina', email: 'katrina@gmail.com', password: 'password')
 u10 = User.create(name: 'Vance', email: 'vance@gmail.com', password: 'password')
 
-snuggie = Project.create(
+snuggie1 = Project.create(
   creator_id: 2,
   city: 'Atlanta',
   state: 'GA',
@@ -31,7 +31,36 @@ snuggie = Project.create(
   end_date: '12/14/2017'
 )
 
-hawaii_chair = Project.create(
+snuggr1 = Reward.create(
+  project_id: 1,
+  amount: 20.00,
+  limit: 1000,
+  title: "Lil' Snuggler",
+  description: "GET ONE SNUGGIE!, CHOOSE YOUR OWN COLOR! LIMITED SUPPLY ACT NOW",
+  delivery_date: 'APR 2018'
+)
+
+snuggr2 = Reward.create(
+  project_id: 1,
+  amount: 50.00,
+  limit: 200,
+  title: "The Triple Threat",
+  description: "GET THREE SNUGGIES!, CHOOSE YOUR OWN COLORS!
+                As I type these are flying of the shelves, you can't miss these deals folks!",
+  delivery_date: 'APR 2018'
+)
+
+snuggr3 = Reward.create(
+  project_id: 1,
+  amount: 150.00,
+  limit: 10,
+  title: "Super Snuggie Special",
+  description: "GET TEN SNUGGIES!, CHOOSE YOUR OWN COLORS!
+                You are basically stealing from me at this price, only a fool would pass at this opportunity!",
+  delivery_date: 'APR 2018'
+)
+
+hawaii_chair2 = Project.create(
   creator_id: 8,
   city: 'Honolulu',
   state: 'HI',
@@ -45,7 +74,7 @@ hawaii_chair = Project.create(
   end_date: '7/4/2018'
 )
 
-sham_wow = Project.create(
+sham_wow3 = Project.create(
   creator_id: 10,
   city: 'Portland',
   state: 'OR',
@@ -59,11 +88,11 @@ sham_wow = Project.create(
   end_date: '5/14/2018'
 )
 
-slap_chop = Project.create(
+slap_chop4 = Project.create(
   creator_id: 10,
   city: 'Portland',
   state: 'OR',
-  title: 'ShamWow!',
+  title: 'Slap Chop!',
   organization: 'Fantastico',
   video_url: 'https://www.youtube.com/watch?v=QvcYjSI_RyQ',
   project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1489689951/Free-Shipping-Cut-font-b-Chop-b-font-Crushing-Mashing-font-b-Slap-b-font-font_flssvw.jpg',
@@ -73,7 +102,7 @@ slap_chop = Project.create(
   end_date: '10/7/2017'
 )
 
-wearable_towel = Project.create(
+wearable_towel5 = Project.create(
   creator_id: 5,
   city: 'San Diego',
   state: 'CA',
@@ -85,4 +114,32 @@ wearable_towel = Project.create(
   short_description: "Tired of having to choose between wearing clothes or wearing a towel? Tire no more! The wearable towel will solve all of your life's problems!",
   funding_goal: 56000,
   end_date: '1/17/2018'
+)
+
+magic_bullet6 = Project.create(
+  creator_id: 6,
+  city: 'Boston',
+  state: 'MA',
+  title: 'The Magic Bullet',
+  organization: 'FoodiMax',
+  video_url: 'https://www.youtube.com/watch?v=43VClzXOvg8',
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1489707800/index-cta-mb-desktop_iuxomo.jpg',
+  short_description: "Stow away those bulky blenders and unwieldy food processors, and let the Magic Bullet work its charm!",
+  description: "Handy versatile and easy to use, the Magic Bullet takes up minimal counter space while showcasing maximum speed and versatility. With its unique design and compact size, the Magic Bullet chops, mixes, blends, whips, grinds and more in less time than it takes to assemble standard kitchen appliances. And with a wide array of dishwasher-safe attachments, clean up is as easy as it gets. The secret to the Magic Bullet's time-saving efficiency is its specially designed blade and unique bullet shape. These features work together to quickly and forcefully circulate food back into the Cyclonic Cutting Zone®, allowing the Magic Bullet to do virtually any food prep task in seconds.",
+  funding_goal: 4000,
+  end_date: '3/24/2018'
+)
+
+shoe_dini7 = Project.create(
+  creator_id: 4,
+  city: 'Seattle',
+  state: 'WA',
+  title: 'ShoeDini',
+  organization: 'Sellers with Sole',
+  video_url: 'https://www.youtube.com/watch?v=9EZHVokj1lI',
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1489725218/201131944239probigpic_o66vf9.jpg',
+  short_description: "Stow away those bulky blenders and unwieldy food processors, and let the Magic Bullet work its charm!",
+  description: "Even the best escapologists struggle to slip out of their shoes. As Harry Houdini rolls over in his grave, Gilbert Gottfried's grating voice plugs the ShoeDini, the world's first shoehorn on a stick. The 'telescoping handle' adjusts to customers of all heights, while the 'patented grip clip' keeps the shoe steady, ending your bending in the process. The ShoeDini infomercial does not try to hide its targeted demographic, appealing to 'anyone with arthritis or back pain, especially those with limited mobility.' Which might be why they chose Gottfried, whose shrieking voice can only be tolerated by those whose hearing is on the wane, to narrate.",
+  funding_goal: 7500,
+  end_date: '1/4/2018'
 )

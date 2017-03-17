@@ -16,7 +16,8 @@
 }
 
 .projects-container {
-  width: 1080px;
+  border: 1px solid red;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,13 +28,13 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .projects-list > li {
   margin: 18px;
-  width: 28%;
   display: flex;
-  flex-wrap: wrap;
+  align-self: center;
   height: 460px;
   width: 312px;
 }

@@ -30,9 +30,9 @@ column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
 project_id  | integer   | not null, foreign key (references users), indexed
+title       | string    | not null
 amount      | float     | not null
 limit       | int       | not null
-title       | string    | not null
 description | string    | not null
 delivery    | string    | not null
 
