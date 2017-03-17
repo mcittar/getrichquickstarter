@@ -1,6 +1,6 @@
 json.extract! @project, :id, :title, :city, :state, :end_date,
               :organization, :project_pic, :short_description,
-              :description, :video_url
+              :description, :video_url, :funding_goal
 json.user @project.user.name
 json.rewards do
   @project.rewards.each do |reward|

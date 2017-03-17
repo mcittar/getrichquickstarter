@@ -8,7 +8,9 @@ export const scrapeProject = (id) => dispatch => {
   );
 };
 
-export const receiveProject =  project => ({
-  type: RECEIVE_PROJECT,
-  project
-});
+export const receiveProject =  project => {
+  return {
+    type: RECEIVE_PROJECT,
+    project
+  };
+};

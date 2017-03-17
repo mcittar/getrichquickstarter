@@ -1,0 +1,8 @@
+@import "base/colors.scss";
+@import "base/fonts.scss";
+
+.reward-container {
+  border: 1px solid $light-gray;
+  padding: 10px;
+  background-color: $lightest-gray;
+}

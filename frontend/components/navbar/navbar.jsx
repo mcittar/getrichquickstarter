@@ -15,13 +15,13 @@ class NavBar extends React.Component {
     let rightNav;
     if (this.props.currentUser) {
       rightNav = (
-          <span className='logout' onClick={ this.userLogout.bind(this) }>Logout</span>
+          <span className='logout hvr-underline-reveal' onClick={ this.userLogout.bind(this) }><span>Logout</span></span>
       );
     } else {
       rightNav = (
         <ul>
-          <li className="login"><Link to='/login'>Log In</Link></li>
-          <li className='signup'><Link to='/signup'>Sign Up</Link></li>
+          <li className="login hvr-underline-reveal"><Link to='/login'>Log In</Link></li>
+          <li className='signup hvr-underline-reveal'><Link to='/signup'>Sign Up</Link></li>
         </ul>
       );
     }
@@ -33,11 +33,11 @@ class NavBar extends React.Component {
             <Link to='/discover'>
               <div className="discover-wrapper">
                 <i className="fa fa-compass" aria-hidden="true"></i>
-                <div className='nav-discover'>Discover</div>
+                <div className='nav-discover hvr-underline-reveal'><div className='discovery '>Discover</div></div>
               </div>
             </Link>
           </li>
-          <li className="create ">Create a Project</li>
+          <li className="create hvr-underline-reveal">Create a Project</li>
         </ul>
         <ul className="center-nav">
           <li><Link to='/'>

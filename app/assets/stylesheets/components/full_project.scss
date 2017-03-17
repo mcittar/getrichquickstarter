@@ -1,10 +1,104 @@
 @import "base/colors.scss";
 
 .full-project-section {
-  height: 100%;
   background: $cream-gray;
   display: flex;
-  align-items: center;
   justify-content: center;
   box-shadow: inset 0px 7px 16px -3px rgba(50, 50, 50, 0.15);
+}
+
+.full-project-section span {
+  font-family: catamaran-light;
+  font-weight: bold;
+}
+
+.full-project-section div {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.full-project-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 66%;
+  height: 100%;
+}
+
+.project-top {
+  border-bottom: 1px solid $light-gray;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+  height: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-top-header-section {
+  box-sizing: border-box;
+  padding-top: 60px;
+  display: flex;
+  flex: 1;
+}
+
+.project-author {
+  align-items: center;
+  width: 20%;
+  display: flex;
+}
+
+.project-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title-description {
+  font-size: 16px;
+  margin-top: 15px;
+  color: $dark-gray;
+  font-family: sans-serif;
+}
+
+.project-top-video-section {
+  height: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-video {
+  width: 64%;
+  height: 100%;
+}
+
+.project-top-details {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 36%;
+}
+
+.project-body {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.project-body-description {
+  width: 67%;
+  font-size: 16px;
+  margin-top: 15px;
+  color: $darker-gray;
+  font-family: catamaran-light;
+}
+
+.project-body-rewards {
+  margin-left: 35px;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
