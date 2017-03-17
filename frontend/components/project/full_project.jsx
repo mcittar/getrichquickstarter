@@ -12,9 +12,9 @@ class FullProject extends React.Component {
   render(){
     const { project } = this.props;
     return(
-      <div>
+      <section className='full-project-section'>
         { project.title }
-      </div>
+      </section>
     );
   }
 }
