@@ -32,7 +32,6 @@ class Reward extends React.Component {
         </div>
 
         <button className='backer-button'>Continue</button>
-        <div>{ reward.limit }</div>
       </section>
     );
   }

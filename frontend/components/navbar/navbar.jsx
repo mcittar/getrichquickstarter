@@ -37,7 +37,7 @@ class NavBar extends React.Component {
               </div>
             </Link>
           </li>
-          <li className="create hvr-underline-reveal">Create a Project</li>
+          <li className="create hvr-underline-reveal"><Link to='/new'>Create a Project</Link></li>
         </ul>
         <ul className="center-nav">
           <li><Link to='/'>

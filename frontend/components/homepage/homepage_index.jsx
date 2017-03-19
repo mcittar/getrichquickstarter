@@ -23,11 +23,13 @@ class HomepageIndex extends React.Component {
 
         <section className='home-video-container'></section>
 
+        <div className='projects-header'>Popular Projects</div>
+        
         <section className='projects-container'>
 
-            <ul className='projects-list'>
-              { projects }
-            </ul>
+          <ul className='projects-list'>
+            { projects }
+          </ul>
 
         </section>
 

@@ -1,0 +1,16 @@
+@import "base/colors.scss";
+@import "base/fonts.scss";
+
+.new-project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: image-url('creation.jpg');
+  height: 600px;
+  width: 100%;
+  background-size: cover;
+}
+
+.new-project-image-text {
+  color: white;
+}
