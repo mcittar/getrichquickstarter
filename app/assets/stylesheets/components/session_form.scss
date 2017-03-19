@@ -40,6 +40,10 @@
   background-color: $deep-blue;
 }
 
+.auth-demo-button:hover {
+  background-color: $deeper-blue;
+}
+
 .auth-form > span {
   color: $light-gray;
   font-style: italic;

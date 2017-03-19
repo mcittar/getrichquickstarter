@@ -40,6 +40,10 @@ small {
 	color: $gray;
 }
 
+input[type='text'] {
+	font-family: cabin;
+}
+
 input, button {
 	width: 95%;
 	font-family: $serif;
@@ -55,4 +59,28 @@ button {
 	font-family: $sans-serif;
 	text-align: center;
 	background-color: $strong-green;
+	transition: background-color 0.4s ease;
+	display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+button:hover {
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+	background-color: $hover-green;
+}
+
+/* Grow */
+.hvr-grow {
+
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+
 }

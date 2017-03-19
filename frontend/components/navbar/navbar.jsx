@@ -32,8 +32,8 @@ class NavBar extends React.Component {
           <li>
             <Link to='/discover'>
               <div className="discover-wrapper">
-                <i className="fa fa-compass" aria-hidden="true"></i>
-                <div className='nav-discover hvr-underline-reveal'><div className='discovery '>Discover</div></div>
+
+                <div className='nav-discover hvr-underline-reveal'><div className='discovery '><i className="fa fa-compass" aria-hidden="true"></i><span>Discover</span></div></div>
               </div>
             </Link>
           </li>

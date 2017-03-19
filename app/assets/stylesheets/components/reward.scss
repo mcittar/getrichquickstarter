@@ -2,7 +2,88 @@
 @import "base/fonts.scss";
 
 .reward-container {
-  border: 1px solid $light-gray;
-  padding: 10px;
-  background-color: $lightest-gray;
+  border: 1px solid $soft-blue;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: $softest-blue;
+}
+
+.reward-container:hover {
+  border-color: $pledge-blue;
+}
+
+.amount {
+  color: $pledge-blue;
+  padding-bottom: 12px;
+  font-size: 200px;
+}
+
+.backer-button {
+  font-family: sans-serif;
+  color: white;
+}
+
+.title {
+  padding-bottom: 10px;
+}
+
+.description {
+  color: $gray;
+  padding-bottom: 18px;
+}
+
+.delivery {
+  padding-bottom: 30px;
+}
+
+.delivery > span {
+  font-family: cabin;
+  color: $gray;
+  font-size: 10px;
+}
+
+.backers {
+  padding-bottom: 25px;
+}
+
+.backers > span {
+  color: $gray;
+  font-size: 10px;
+  font-family: cabin;
+}
+
+.reward-divider {
+  color: $soft-blue;
+  margin-bottom: 15px;
+}
+
+.pledge-box {
+  font-size: 10px;
+}
+
+.currency input {
+  box-sizing: border-box;
+  padding-left: 36px;
+  border-color: $soft-blue;
+}
+
+.currency input:focus {
+  border: 1px solid $pledge-blue;
+}
+
+.currency i {
+  font-size: 12px;
+  position: relative;
+  top: 37px;
+  left: 9px;
+  padding: 5px 8px;
+  background-color: $light-gray;
+  border-radius: 3px;
+}
+
+.pledge-box > span {
+  font-size: 11px;
+  font-family: cabin;
+  font-weight: bold;
 }

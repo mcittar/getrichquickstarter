@@ -14,12 +14,24 @@ class Reward extends React.Component {
     const { reward } = this.props;
     return(
       <section className='reward-container'>
-        <div>Pledge ${ reward.amount }</div>
-        <div>{ reward.title }</div>
-        <div>{ reward.description }</div>
-        <div>{ reward.delivery_date }</div>
-        <input></input>
-        <button></button>
+        <div className='amount'>Pledge ${ reward.amount }</div>
+        <div className='title'>{ reward.title }</div>
+        <div className='description'>{ reward.description }</div>
+
+        <div className='delivery'><span>ESTIMATED DELIVERY</span><br></br>{ reward.delivery_date }</div>
+        <div className='backers'><span>2345 backers</span></div>
+
+        <div className='reward-divider'>-----------------------------------------------------------------</div>
+
+        <div className='pledge-box'>
+          <span>PLEDGE AMOUNT</span>
+          <div className='currency'>
+            <i>$</i>
+            <input type='text' className='pledge-input'></input>
+          </div>
+        </div>
+
+        <button className='backer-button'>Continue</button>
         <div>{ reward.limit }</div>
       </section>
     );
