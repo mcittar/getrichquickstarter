@@ -16,12 +16,10 @@
 }
 
 .projects-header {
-  border: 1px solid red;
   align-self: center;
 }
 
 .projects-container {
-  border: 1px solid red;
   margin-top: 80px;
   width: 80%;
   display: flex;
@@ -31,7 +29,7 @@
 
 
 .projects-list {
-  border: 1px solid red;
+  // border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

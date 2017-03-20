@@ -1,16 +1,105 @@
 @import "base/colors.scss";
 @import "base/fonts.scss";
 
-.new-project-image {
+.new-project {
+  height: 100%;
+  background: $warm-gray;
+  box-shadow: inset 0px 7px 16px -3px rgba(50, 50, 50, 0.15);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-image: image-url('creation.jpg');
-  height: 600px;
-  width: 100%;
-  background-size: cover;
 }
 
-.new-project-image-text {
-  color: white;
+.new-project-wrapper {
+  height: 100%;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  flex-direction: column;
+}
+
+// .new-project-image {
+//   border: 1px solid red;
+//   display: flex;
+//   justify-content: center;
+//   align-items: flex-start;
+//   flex-direction: column;
+//   background: url('https://res.cloudinary.com/ddy9eynci/image/upload/v1489959369/splash_background_by_martijntje4_gho022.png');
+//   height: 100%;
+//   width: 100%;
+//   background-size: cover;
+// }
+
+.new-project-form {
+  margin-top: 30px;
+  border-radius: 6px;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.new-project-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-project-header > h1 {
+  font-size: 30px;
+}
+
+.new-project-header > div {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+  width: 80%;
+}
+
+.new-project-choices {
+  height: 100%;
+  padding: 20px;
+}
+
+.new-project-choices > li {
+  background-color: $softest-blue;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-project-choices > li div {
+  margin-left: 10px;
+  margin-top: 7px;
+  padding: 6px;
+  align-self: baseline;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 100%;
+  flex: 1;
+}
+
+.new-project-choices > li input {
+  font-family: sans-serif;
+  font-size: 14px;
+  background-color: white;
+  width: 60%;
+  font-weight: none;
+}
+
+.new-project-choices > li span {
+  width: 60%;
+}
+
+.new-project-choices > li > span input {
+  width: 100%;
 }

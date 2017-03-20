@@ -55,7 +55,7 @@ backer_id   | integer   | not null, foreign key (references users), indexed
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-tag         | integer   | not null
+tag         | string    | not null
 
 ## taggings
 column name | data type | details
