@@ -4,3 +4,11 @@ export const scrapeProjects = () => {
     url: 'api/projects'
   });
 };
+
+export const addProject = project => {
+  return $.ajax({
+    method: 'POST',
+    url: 'api/projects',
+    data: {project}
+  });
+};

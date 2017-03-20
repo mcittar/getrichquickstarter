@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 gem 'annotate'
+gem 'cloudinary'
+gem 'figaro'
 gem 'bcrypt'
 gem 'pry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

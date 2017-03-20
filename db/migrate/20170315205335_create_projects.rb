@@ -7,7 +7,7 @@ class CreateProjects < ActiveRecord::Migration[5.0]
       t.string :title, null: false
       t.string :end_date, null: false
       t.string :organization, null: false
-      t.string :video_url, null: false
+      t.string :video_url
       t.string :project_pic, null: false
       t.text :description, null: false
       t.integer :funding_goal, null: false

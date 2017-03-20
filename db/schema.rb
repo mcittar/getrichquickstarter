@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20170319204254) do
     t.string   "title",             null: false
     t.string   "end_date",          null: false
     t.string   "organization",      null: false
-    t.string   "video_url",         null: false
+    t.string   "video_url"
     t.string   "project_pic",       null: false
     t.text     "description",       null: false
     t.integer  "funding_goal",      null: false
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20170319204254) do
   create_table "rewards", force: :cascade do |t|
     t.integer  "project_id",    null: false
     t.float    "amount",        null: false
-    t.integer  "limit",         null: false
+    t.integer  "limit"
     t.string   "title",         null: false
     t.string   "description",   null: false
     t.string   "delivery_date", null: false
