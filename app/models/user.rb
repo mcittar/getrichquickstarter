@@ -1,7 +1,6 @@
 class User < ApplicationRecord
-  validates :email, :password_digest, :session_token, presence: true
-  validates_presence_of :name, message: 'Invalid username'
-  validates :email, :name, :session_token, uniqueness: true
+  validates :email, :username, :password_digest, :session_token, presence: true
+  validates :email, :username, :session_token, uniqueness: true
   validates :password, length: { minimum: 6 }, allow_nil: true
 
   has_many :projects

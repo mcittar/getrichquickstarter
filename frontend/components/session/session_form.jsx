@@ -5,7 +5,7 @@ class SessionForm extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      name: "",
+      username: "",
       email: "",
       password: ""
     };
@@ -42,7 +42,7 @@ class SessionForm extends React.Component {
 
   clearData(){
     this.setState({
-      name: "",
+      username: "",
       email: "",
       password: ""
     });
@@ -63,7 +63,7 @@ class SessionForm extends React.Component {
       button = 'Log me in!';
     } else {
       title = "Sign up";
-      name = <input placeholder="Username" value={ this.state.name } onChange={ this.updateAttributes('name') }/>;
+      name = <input placeholder="Username" value={ this.state.username } onChange={ this.updateAttributes('username') }/>;
       button = 'Sign me up!';
     }
 

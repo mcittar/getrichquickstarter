@@ -25,7 +25,7 @@ class NewProjectForm extends React.Component {
   componentDidMount(){
     this.props.getTags();
     this.setState( { creator_id: this.props.currentUser.id } );
-    this.setState( { organization: this.props.currentUser.name } );
+    this.setState( { organization: this.props.currentUser.username } );
   }
 
   updateAttributes(attribute){
@@ -35,14 +35,12 @@ class NewProjectForm extends React.Component {
   }
 
   submit(){
-    debugger;
     this.props.createProject(this.state)
-    .then(project => this.redirectOnSuccess(project));
+    .then(project => this.redirectOnSuccess(Object.keys(project.project)[0]));
   }
 
-  redirectOnSuccess(project) {
-    debugger;
-		this.props.router.push(`/projects/${project.id}`);
+  redirectOnSuccess(id) {
+		this.props.router.push(`/projects/${id}`);
 	}
 
   handleImage(e){

@@ -1,7 +1,7 @@
 json.extract! @project, :id, :title, :city, :state, :end_date,
               :organization, :project_pic, :short_description,
               :description, :video_url, :funding_goal, :tags
-json.user @project.user.name
+json.user @project.user.username
 
 json.tags @project.tags do |tag|
   json.tag tag.tag
