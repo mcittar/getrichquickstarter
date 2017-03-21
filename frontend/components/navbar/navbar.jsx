@@ -4,10 +4,18 @@ import { Link } from 'react-router';
 class NavBar extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      search_status: false
+    };
   }
 
   userLogout() {
     this.props.logout();
+  }
+
+  toggleSearch() {
+    const newStatus = !this.state.search_status;
+    this.setState({ search_status: newStatus });
   }
 
   render() {
@@ -48,7 +56,7 @@ class NavBar extends React.Component {
           </Link></li>
         </ul>
         <ul className='right-nav'>
-          <li><i className="fa fa-search"></i></li>
+          <li onClick={ this.toggleSearch.bind(this) }><i className="fa fa-search"></i></li>
           <li>{ rightNav }</li>
         </ul>
       </nav>
