@@ -1,3 +1,5 @@
+require 'byebug'
+
 class Api::ProjectsController < ApplicationController
   def index
     @projects = Project.all
@@ -6,6 +8,7 @@ class Api::ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
+    byebug
 
     if @project.save
       render :new
@@ -31,7 +34,7 @@ class Api::ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:id, :creator_id, :city, :state, :title,
+    params.require(:project).permit(:reward_attributes, :id, :creator_id, :city, :state, :title,
                                     :organization, :video_url, :project_pic,
                                     :description, :funding_goal, :end_date,
                                     :short_description)

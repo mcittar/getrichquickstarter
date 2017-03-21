@@ -12,4 +12,6 @@ class Project < ApplicationRecord
   has_many :tags,
            through: :taggings,
            source: :tag
+
+  accepts_nested_attributes_for :rewards
 end

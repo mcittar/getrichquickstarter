@@ -55,4 +55,9 @@
    },
    errors: ['body cant be blank!']
  }
+ tags: [
+  {
+    tag: "Haircuts"
+  }
+ ]
 }

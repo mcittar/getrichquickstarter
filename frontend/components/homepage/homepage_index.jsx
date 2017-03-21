@@ -12,10 +12,11 @@ class HomepageIndex extends React.Component {
   }
 
   render() {
+    const { projects } = this.props;
     const keys = Object.keys(this.props.projects);
-    const projects = keys.map(key => {
-      let project = this.props.projects[key];
-      return <li key={ project.id }><ProjectBlurb project={ project } /></li>;
+    const outProjects = keys.map(key => {
+      let smallProject = projects[key];
+      return <li key={ smallProject.id }><ProjectBlurb project={ smallProject } /></li>;
     });
 
     return(
@@ -24,11 +25,11 @@ class HomepageIndex extends React.Component {
         <section className='home-video-container'></section>
 
         <div className='projects-header'>Popular Projects</div>
-        
+
         <section className='projects-container'>
 
           <ul className='projects-list'>
-            { projects }
+            { outProjects }
           </ul>
 
         </section>
