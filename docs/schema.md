@@ -48,6 +48,7 @@ body        | string    | not null
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
+amount      | integer   | not null
 reward_id   | integer   | not null, foreign key (references projects), indexed
 backer_id   | integer   | not null, foreign key (references users), indexed
 

@@ -16,7 +16,7 @@ class HomepageIndex extends React.Component {
     const keys = Object.keys(this.props.projects);
     const outProjects = keys.map(key => {
       let smallProject = projects[key];
-      return <li key={ smallProject.id }><ProjectBlurb project={ smallProject } /></li>;
+      return <li key={ key }><ProjectBlurb project={ smallProject } /></li>;
     });
 
     return(

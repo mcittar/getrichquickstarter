@@ -1,13 +1,27 @@
 import React from 'react';
+import { addContribution } from '../../util/reward_api_util';
 
 class Reward extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      contributor_id: 0,
-      reward_id: this.props.id,
+      backer_id: this.props.currentUser.id,
+      reward_id: this.props.reward.id,
       amount: 0
     };
+  }
+
+  componentDidMount(){
+    this.setState({ amount: this.props.reward.amount });
+  }
+
+  changeAmount(e){
+    this.setState({ amount: e.currentTarget.value });
+  }
+
+  createContribution(e){
+    e.preventDefault();
+    addContribution(this.state);
   }
 
   render(){
@@ -27,11 +41,11 @@ class Reward extends React.Component {
           <span>PLEDGE AMOUNT</span>
           <div className='currency'>
             <i>$</i>
-            <input type='text' className='pledge-input'></input>
+            <input type='text' value={ this.state.amount } onChange={ this.changeAmount.bind(this) } className='pledge-input'></input>
           </div>
         </div>
 
-        <button className='backer-button'>Continue</button>
+        <button className='backer-button' onClick={ this.createContribution.bind(this) }>Continue</button>
       </section>
     );
   }

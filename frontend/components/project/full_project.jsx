@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Reward from './reward';
+import RewardContainer from './reward_container';
 
 class FullProject extends React.Component {
   constructor(props){
@@ -19,7 +19,7 @@ class FullProject extends React.Component {
     if (project.rewards) {
       const rewardKeys = Object.keys(project.rewards);
       projectRewards = rewardKeys.map(key => {
-        return <Reward key={ key } reward={ project.rewards[key] } />;
+        return <RewardContainer key={ key } reward={ project.rewards[key] } />;
       });
     }
 

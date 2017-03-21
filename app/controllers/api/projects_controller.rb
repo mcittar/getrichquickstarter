@@ -8,7 +8,6 @@ class Api::ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    # byebug
 
     if @project.save
       render :new

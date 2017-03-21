@@ -5,6 +5,9 @@ class User < ApplicationRecord
 
   has_many :projects
 
+  has_many :contributions,
+           foreign_key: :backer_id
+
   attr_reader :password
 
   before_validation :ensure_token

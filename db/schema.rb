@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170319204254) do
+ActiveRecord::Schema.define(version: 20170321163450) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "contributions", force: :cascade do |t|
+    t.integer  "amount",     null: false
+    t.integer  "reward_id",  null: false
+    t.integer  "backer_id",  null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["backer_id"], name: "index_contributions_on_backer_id", using: :btree
+    t.index ["reward_id"], name: "index_contributions_on_reward_id", using: :btree
+  end
 
   create_table "projects", force: :cascade do |t|
     t.integer  "creator_id",        null: false

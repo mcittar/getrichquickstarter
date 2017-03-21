@@ -10,6 +10,7 @@ end
 json.rewards do
   @project.rewards.each do |reward|
     json.set! reward.id do
+      json.id reward.id
       json.title reward.title
       json.amount reward.amount
       json.limit reward.limit
