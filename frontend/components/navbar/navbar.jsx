@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, withRouter } from 'react-router';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class NavBar extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      search_status: false
+      search_status: false,
+      search_value: ""
     };
   }
 
@@ -16,6 +18,16 @@ class NavBar extends React.Component {
   toggleSearch() {
     const newStatus = !this.state.search_status;
     this.setState({ search_status: newStatus });
+  }
+
+  updateSearch(e) {
+    e.preventDefault();
+      this.setState({ search_status: e.currentTarget.value });
+  }
+
+  submitSearch(e) {
+    e.preventDefault();
+
   }
 
   render() {
@@ -34,8 +46,28 @@ class NavBar extends React.Component {
       );
     }
 
-    return (
-      <nav className="main-nav">
+    let searchNav = (
+      <ReactCSSTransitionGroup
+         className='search-nav'
+         transitionName='show-search'
+         transitionEnterTimeout={1000}
+         transitionLeaveTimeout={1000}>
+
+        <ul className='search-holder'>
+          <li className='search-nav-search'>
+            <i className="fa fa-search"></i>
+            <form onSubmit={ this.submitSearch.bind(this) }>
+              <input onChange={ this.updateSearch.bind(this) } placeholder='Search' type='text'></input>
+            </form>
+          </li>
+          <li className='search-cancel' onClick={ this.toggleSearch.bind(this) }><i className="fa fa-times"></i></li>
+        </ul>
+
+      </ReactCSSTransitionGroup>
+    );
+
+    let baseNav = (
+      <div className="main-nav">
         <ul className='left-nav'>
           <li className='discover-li'>
             <Link to='/discover'>
@@ -59,9 +91,22 @@ class NavBar extends React.Component {
           <li onClick={ this.toggleSearch.bind(this) }><i className="fa fa-search"></i></li>
           <li>{ rightNav }</li>
         </ul>
+      </div>
+    );
+
+    let currentNav = baseNav;
+    if (this.state.search_status) {
+      currentNav = searchNav;
+    } else {
+      currentNav = baseNav;
+    }
+
+    return (
+      <nav className='nav-main-container'>
+        { currentNav }
       </nav>
     );
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);

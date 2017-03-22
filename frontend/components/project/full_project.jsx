@@ -80,6 +80,7 @@ class FullProject extends React.Component {
             </section>
 
             <ul className='project-body-rewards'>
+              <content>Support this project</content>
               { projectRewards }
             </ul>
           </section>
