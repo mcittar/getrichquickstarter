@@ -27,7 +27,8 @@ class NavBar extends React.Component {
 
   submitSearch(e) {
     e.preventDefault();
-
+    this.props.router.push(`/search/${this.state.search_status.split(" ").join("-")}`);
+    this.toggleSearch();
   }
 
   render() {

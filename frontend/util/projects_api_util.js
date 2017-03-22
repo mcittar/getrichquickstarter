@@ -13,3 +13,11 @@ export const addProject = project => {
     contentType: 'application/json'
   });
 };
+
+export const scrapeFilteredProjects = (filter) => {
+  return $.ajax({
+    method: 'GET',
+    url: 'api/searches',
+    data: {filter}
+  });
+};

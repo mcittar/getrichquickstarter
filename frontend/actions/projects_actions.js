@@ -2,10 +2,14 @@ import * as APIUtil from '../util/projects_api_util';
 export const RECEIVE_PROJECTS = 'RECEIVE_PROJECTS';
 export const RECEIVE_PROJECT = 'RECEIVE_PROJECT';
 export const RECEIVE_FORM_ERRORS = 'RECEIVE_FORM_ERRORS';
-// import receiveErrors from './error_actions';
 
 export const scrapeProjects = () => dispatch => (
   APIUtil.scrapeProjects()
+    .then((projects) => (dispatch(receiveProjects(projects))))
+);
+
+export const scrapeFilteredProjects = (filter) => dispatch => (
+  APIUtil.scrapeFilteredProjects(filter)
     .then((projects) => (dispatch(receiveProjects(projects))))
 );
 

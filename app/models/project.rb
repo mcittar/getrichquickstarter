@@ -21,4 +21,10 @@ class Project < ApplicationRecord
   has_many :backers,
            through: :contributions,
            source: :backer
+
+  def self.search(word)
+    self.where("lower(title) LIKE ?", "%#{word.downcase}%")
+    # self.where("? IN (lower(title))", "%#{word.downcase}%")
+  end
+
 end
