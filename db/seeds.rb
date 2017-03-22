@@ -153,3 +153,7 @@ shoe_dini7 = Project.create(
 )
 
 leisure_snuggie = Tagging.create(tag_id: 1, project_id: 1)
+
+50.times do
+  Contribution.create(amount: 10, backer_id: 2, reward_id: 1)
+end

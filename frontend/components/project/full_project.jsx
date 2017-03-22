@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import RewardContainer from './reward_container';
+import NumberFormat from 'react-number-format';
 
 class FullProject extends React.Component {
   constructor(props){
@@ -23,28 +24,42 @@ class FullProject extends React.Component {
       });
     }
 
+    let projectImage;
+    if (project.video_url){
+      projectImage = project.video_url;
+    } else {
+      projectImage = project.project_pic;
+    }
+
     return(
       <section className='full-project-section'>
-        <section className='full-project-wrapper'>
 
           <section className='project-top'>
 
             <section className='project-top-header-section'>
 
               <ul className='project-title'>
-                <div>
-                  <li><h1>{ project.title }</h1></li>
-                  <li className='project-title-description'>{ project.short_description }</li>
+                <li>
+                  <div><h1>{ project.title }</h1></div>
+                  <div className='project-title-description'>{ project.short_description }</div>
                   <div><span>By </span>{ project.organization }</div>
-                </div>
+                </li>
               </ul>
             </section>
 
             <section className='project-top-video-section'>
-              <iframe className='project-video' src={ project.video_url } allowFullScreen></iframe>
+              <iframe className='project-video' src={ projectImage } allowFullScreen></iframe>
 
               <section className='project-top-details'>
-                { project.funding_goal }
+                <content>$</content>
+                <content>pledged of <NumberFormat
+                                      value={ project.funding_goal }
+                                      displayType={'text'}
+                                      thousandSeparator={true}
+                                      prefix={'$'}
+                                    />
+                </content>
+
               </section>
             </section>
 
@@ -61,7 +76,6 @@ class FullProject extends React.Component {
             </ul>
           </section>
 
-        </section>
       </section>
     );
   }

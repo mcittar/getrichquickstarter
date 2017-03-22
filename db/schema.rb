@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20170321163450) do
     t.integer  "limit"
     t.string   "title",         null: false
     t.string   "description",   null: false
-    t.string   "delivery_date", null: false
+    t.string   "delivery_date"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.index ["project_id"], name: "index_rewards_on_project_id", using: :btree

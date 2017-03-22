@@ -37,7 +37,7 @@ class NavBar extends React.Component {
     return (
       <nav className="main-nav">
         <ul className='left-nav'>
-          <li>
+          <li className='discover-li'>
             <Link to='/discover'>
               <div className="discover-wrapper">
 

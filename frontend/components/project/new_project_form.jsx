@@ -59,14 +59,14 @@ class NewProjectForm extends React.Component {
   upDateReward(field, idx) {
    return e => {
      this.state.reward_attributes[idx][field] = e.currentTarget.value;
-     this.setState({reward_attributes: this.state.reward_attributes});
+     this.setState( { reward_attributes: this.state.reward_attributes } );
    };
  }
 
   addReward () {
     let newRewards = this.state.reward_attributes.slice(0);
-    newRewards.push( {title: "", body: "", cost: 1, } );
-    this.setState( {reward_attributes: newRewards} );
+    newRewards.push( { title: "", description: "", amount: 1, } );
+    this.setState( { reward_attributes: newRewards} );
  }
 
  deleteReward() {
@@ -179,7 +179,7 @@ class NewProjectForm extends React.Component {
                         <div>Title</div>
                         <input type="text"
                           className="project-create-rewards-input"
-                          value={reward.title}
+                          value={ reward.title }
                           onChange={this.upDateReward('title', idx)}
                         />
                       </li>
@@ -187,16 +187,16 @@ class NewProjectForm extends React.Component {
                         <div>Description</div>
                         <textarea
                             className="project-create-rewards-textarea"
-                            value={reward.body}
-                            onChange={this.upDateReward('body', idx)}
+                            value={ reward.description }
+                            onChange={this.upDateReward('description', idx)}
                           />
                       </li>
                       <li>
                         <div>Amount</div>
                         <input
                             className="project-create-rewards-input"
-                            value={reward.cost}
-                            onChange={this.upDateReward('cost', idx)}
+                            value={ reward.amount }
+                            onChange={this.upDateReward('amount', idx)}
                           />
                       </li>
                   </ul>

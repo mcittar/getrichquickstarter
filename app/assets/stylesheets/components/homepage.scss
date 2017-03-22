@@ -11,25 +11,33 @@
 .home-video-container {
   height: 600px;
   width: 100%;
-  background-image: image-url('city-overview.jpg');
+  // background-image: image-url('city-overview.jpg');
+  // background: url('http://res.cloudinary.com/ddy9eynci/image/upload/v1490126262/o-RAINING-MONEY-facebook_kxxhlc.jpg');
+  background: url('http://res.cloudinary.com/ddy9eynci/image/upload/v1490126461/rsz_shutterstock_337195208-e1456810212413_lw8f2c.jpg');
   background-size: cover;
 }
 
 .projects-header {
-  align-self: center;
+  margin-top: 40px;
+  height: 100%;
+  width: 80%;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.project-body {
+  width: 100%;
 }
 
 .projects-container {
-  margin-top: 80px;
+  margin-top: 30px;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .projects-list {
-  // border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -84,6 +92,10 @@
 }
 
 .blurb-footer {
-  border-radius: 9px;
+  flex: 1;
+  width: 100%;
   align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

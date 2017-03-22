@@ -6,7 +6,7 @@ class CreateRewards < ActiveRecord::Migration[5.0]
       t.integer :limit
       t.string :title, null: false
       t.string :description, null: false
-      t.string :delivery_date, null: false
+      t.string :delivery_date
 
       t.timestamps
     end

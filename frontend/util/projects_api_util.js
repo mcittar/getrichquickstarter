@@ -9,6 +9,7 @@ export const addProject = project => {
   return $.ajax({
     method: 'POST',
     url: 'api/projects',
-    data: {project}
+    data: JSON.stringify({project}),
+    contentType: 'application/json'
   });
 };

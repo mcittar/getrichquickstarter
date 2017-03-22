@@ -26,6 +26,7 @@ class ProjectBlurb extends React.Component {
           </section>
 
           <div className='blurb-footer'>
+            <span>{ project.contributions }</span>
             <span>{ project.city }</span>
             <span>{ project.state }</span>
             <span>{ project.end_date }</span>

@@ -7,11 +7,14 @@ class Project < ApplicationRecord
              foreign_key: :creator_id
 
   has_many :rewards
+
   has_many :taggings
 
   has_many :tags,
            through: :taggings,
            source: :tag
 
-  accepts_nested_attributes_for :rewards
+  has_many :contributions,
+           through: :rewards,
+           source: :contributions
 end

@@ -4,6 +4,9 @@
   background: $cream-gray;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   box-shadow: inset 0px 7px 16px -3px rgba(50, 50, 50, 0.15);
 }
 
@@ -21,25 +24,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 66%;
+  width: 65%;
   height: 100%;
 }
 
 .project-top {
-  border-bottom: 1px solid $light-gray;
   padding-bottom: 60px;
   margin-bottom: 20px;
-  height: 700px;
-  width: 100%;
+  width: 75%;
   display: flex;
   flex-direction: column;
 }
 
 .project-top-header-section {
-  box-sizing: border-box;
-  padding-top: 60px;
-  display: flex;
+  margin-top: 30px;
   flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .project-author {
@@ -49,7 +52,6 @@
 }
 
 .project-title {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -62,25 +64,36 @@
 }
 
 .project-top-video-section {
-  height: 65%;
+  margin-top: 15px;
+  height: 450px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .project-video {
-  width: 64%;
-  height: 100%;
+  width: 730px;
+  height: 450px;
 }
 
 .project-top-details {
+  max-width: 400px;
+  min-width: 250px;
+  margin-left: 20px;
+  height: 100%;
+  border-top: 6px solid $kick-green;
+  border-bottom: 6px solid $kick-green;
+  border-radius: 5px;
+  flex: 1;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: auto;
-  width: 36%;
+  align-items: center;
 }
 
 .project-body {
+  border-top: 1px solid $light-gray;
+  background-color: white;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -88,7 +101,8 @@
 }
 
 .project-body-description {
-  width: 60%;
+  margin-top: 30px;
+  width: 45%;
   font-size: 16px;
   margin-top: 15px;
   color: $darker-gray;
@@ -96,6 +110,7 @@
 }
 
 .project-body-rewards {
+  margin-top: 30px;
   margin-left: 35px;
   min-width: 380px;
   max-width: 380px;

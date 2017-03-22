@@ -6,6 +6,7 @@ import SessionFormContainer from './session/session_form_container';
 import HomepageIndexContainer from './homepage/homepage_index_container';
 import FullProjectContainer from './project/full_project_container';
 import NewProjectFormContainer from './project/new_project_form_container';
+import DiscoverContainer from './discover/discover_container';
 
 const Root = ({ store }) => {
 
@@ -27,6 +28,7 @@ const Root = ({ store }) => {
       <Router history={ hashHistory }>
         <Route path='/' component={ App }>
           <IndexRoute component={ HomepageIndexContainer } />
+          <Route path='/discover' component={ DiscoverContainer } />
           <Route path='/login' component={ SessionFormContainer } onEnter={ _redirectIfLoggedIn }/>
           <Route path='/signup' component={ SessionFormContainer } onEnter={ _redirectIfLoggedIn }/>
           <Route path='/projects/:projectId' component={ FullProjectContainer } />
