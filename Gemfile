@@ -8,6 +8,7 @@ end
 gem 'annotate'
 gem 'cloudinary'
 gem 'figaro'
+gem 'faker'
 gem 'bcrypt'
 gem 'pry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

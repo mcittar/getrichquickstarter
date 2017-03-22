@@ -7,15 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 u1 = User.create(username: 'Demo', email: 'demo@gmail.com', password: 'demopassword')
-u2 = User.create(username: 'Frank', email: 'frank@gmail.com', password: 'password')
-u3 = User.create(username: 'Agathor', email: 'agathor@gmail.com', password: 'password')
-u4 = User.create(username: 'Horatio', email: 'horatio@gmail.com', password: 'password')
-u5 = User.create(username: 'Belinda', email: 'belinda@gmail.com', password: 'password')
-u6 = User.create(username: 'Toph', email: 'toph@gmail.com', password: 'password')
-u7 = User.create(username: 'Jessica', email: 'jessica@gmail.com', password: 'password')
-u8 = User.create(username: 'Armand', email: 'armand@gmail.com', password: 'password')
-u9 = User.create(username: 'Katrina', email: 'katrina@gmail.com', password: 'password')
-u10 = User.create(username: 'Vance', email: 'vance@gmail.com', password: 'password')
+
+user_arr = []
+1500.times do |num|
+  name = Faker::Name.unique.name
+  email = Faker::Internet.unique.email
+  user_arr << User.create(username: name, email: email, password: 'password')
+end
+Faker::Name.unique.clear
+Faker::Internet.unique.clear
+range = user_arr.length
 
 personal_care1 = Tag.create(tag: 'Personal Care')
 housewares2 = Tag.create(tag: 'Housewares')
@@ -33,7 +34,11 @@ snuggie1 = Project.create(
   organization: 'Blanket People of America',
   video_url: 'https://www.youtube.com/embed/2xZp-GLMMJ0?ecver=1',
   project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489684375/0000250_snuggie-blue_tthg7a.jpg',
-  description: 'The Snuggie Blanket is a super-soft blanket with sleeves so it does not slip and slide like a regular blanket and keeps you warm from head to toe. Enjoy complete freedom of movement; read, eat, sew, use the remote, talk on the phone or work on your laptop. Your hands are not restricted! You can also use it outside!',
+  description: 'The Snuggie Blanket is a super-soft blanket with sleeves so it does not slip and slide like a regular blanket and keeps you warm from head to toe. Enjoy complete freedom of movement; read, eat, sew, use the remote, talk on the phone or work on your laptop. Your hands are not restricted! You can also use it outside!
+  Oh, the Snuggie. Never in recent memory has such a ridiculous invention sparked such a pop culture phenomenon (although Silly Bandz are certainly in the running). The Snuggie is that invention that people everywhere wonder, “Why didn’t I think of that?” And although the Snuggie ads are the cheesy, poorly-acted epitome of infomercials – my favorite part is all the actors at the sports event cheering in their Snuggies – the makers of Snuggies are actually quite cleverly taking advantage of social media and multimedia.
+Allstar Products Group, the makers of Snuggie, take the thousands of parodies on YouTube – 1,440 to be exact as of this posting – in stride. They even post some of the videos on their website. And now they have recently announced the Snuggie Choice Film Awards Contest – allowing contestants to submit “a Snuggie brand commercial, short film, documentary or parody.” The winner will receive $5,000, a trip to NYC and the opportunity to produce a potential 2011 Snuggie ad.
+I believe this campaign is genius because it reaches out to both those who love and those who love to loathe the Snuggie. The folks at Allstar Products Group are following the number one rule of social media – engagement – by letting their fans, followers and haters become a part of the brand.
+The real beauty of this contest: Snuggie will no doubt generate more attention and nab some fun commercial ideas. Only truly brave companies have the guts and creativity to embrace mockery and turn it into a promotion of their product. Certainly other businesses can follow this example, not only in terms of multimedia usage but also by Allstar’s willingness and ability to turn the negative into a positive.',
   short_description: 'A Revolutionary blanket with sleeves! You never have to leave the comfort of a warm blanket ever again',
   funding_goal: 30000,
   end_date: '12/14/2017'
@@ -75,11 +80,29 @@ hawaii_chair2 = Project.create(
   title: 'The Hawaii Chair',
   organization: 'Society of Chair Enrichment and Media',
   video_url: 'https://www.youtube.com/embed/E9_amg-Aos4?ecver=1',
-  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489616411/hawaii-chair-review_bcl9af.jpg',
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490150644/ho56z3055595aa2fe3d72289117760_q2rp3i.jpg',
   description: 'From the original factory. The Hawaii Chair brings you passive exercise while sitting indoors. The Hawaii Chair was designed to give movement back to the body’s center of mass, no matter how restrictive your lifestyle! Great if you are desk-bound for too-long hours. Great for women. Great for those with leg or foot problems, or having difficulty to exercise easily. The strong circular motion of the hips and abdomen gives intestines and stomach a rhythmic massage, for a stimulated and active feeling even while you remain sitting. Use it to enhance your program of weight reduction. Gentle massage of the lower back can ease minor aches, pains and stiffness. Steady motion with awareness can improve your balance and coordination as it gently works on your lumbar region.',
   short_description: 'A chair that will take you for a spin! Get a great workout while you work! ',
   funding_goal: 25000,
   end_date: '7/4/2018'
+)
+
+hawaii1 = Reward.create(
+  project_id: 2,
+  amount: 200.00,
+  limit: 1000,
+  title: "The Hawaii Experience",
+  description: "Get the LIMITED EDITION specialty handmane vintage one-of-a-kind chair of the future TODAY!",
+  delivery_date: 'DEC 2018'
+)
+
+hawaii2 = Reward.create(
+  project_id: 2,
+  amount: 600.00,
+  limit: 1000,
+  title: "The Big Kahuna",
+  description: "Get 4 (!) LIMITED EDITION specialty handmane vintage one-of-a-kind chairs of the future TODAY!",
+  delivery_date: 'DEC 2018'
 )
 
 sham_wow3 = Project.create(
@@ -96,6 +119,15 @@ sham_wow3 = Project.create(
   end_date: '5/14/2018'
 )
 
+sham1 = Reward.create(
+  project_id: 3,
+  amount: 25,
+  limit: 200,
+  title: "ShamWow 3 Pack",
+  description: "Get 3 ShamWows, guaranteed to improve your soaking efficiency by at least 30%",
+  delivery_date: 'FEB 2019'
+)
+
 slap_chop4 = Project.create(
   creator_id: 10,
   city: 'Portland',
@@ -108,6 +140,24 @@ slap_chop4 = Project.create(
   short_description: "Fantastico presents the Slap Chop! An all purpose kitchen helper that will make your life easier GUARANTEED",
   funding_goal: 13000,
   end_date: '10/7/2017'
+)
+
+chop1 = Reward.create(
+  project_id: 4,
+  amount: 40,
+  limit: 400,
+  title: "SlapChop and Drop",
+  description: "Purchase your very own SlapChop! A great invention that makes cooking fun!",
+  delivery_date: 'JAN 2018'
+)
+
+chop2 = Reward.create(
+  project_id: 4,
+  amount: 60,
+  limit: 100,
+  title: "Slappy Special",
+  description: "At this tier receive a SlapChop and a limited edition teflon chef's apron from Fantastico!",
+  delivery_date: 'JAN 2018'
 )
 
 wearable_towel5 = Project.create(
@@ -124,6 +174,24 @@ wearable_towel5 = Project.create(
   end_date: '1/17/2018'
 )
 
+towel1 = Reward.create(
+  project_id: 5,
+  amount: 120,
+  limit: 400,
+  title: "The Towel Itself",
+  description: "Receive 1 wearable towel! Available in most sizes and colors!",
+  delivery_date: 'OCT 2018'
+)
+
+towel2 = Reward.create(
+  project_id: 5,
+  amount: 400,
+  limit: 100,
+  title: "Towels of a Feather",
+  description: "Receive 4 wearable towel! Available in most sizes and colors!",
+  delivery_date: 'OCT 2018'
+)
+
 magic_bullet6 = Project.create(
   creator_id: 6,
   city: 'Boston',
@@ -138,6 +206,15 @@ magic_bullet6 = Project.create(
   end_date: '3/24/2018'
 )
 
+towel1 = Reward.create(
+  project_id: 6,
+  amount: 45,
+  limit: 4000,
+  title: "The Towel Itself",
+  description: "Receive 1 wearable towel! Available in most sizes and colors!",
+  delivery_date: 'OCT 2018'
+)
+
 shoe_dini7 = Project.create(
   creator_id: 4,
   city: 'Seattle',
@@ -145,15 +222,83 @@ shoe_dini7 = Project.create(
   title: 'ShoeDini',
   organization: 'Sellers with Sole',
   video_url: 'https://www.youtube.com/embed/9EZHVokj1lI?ecver=1',
-  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489725218/201131944239probigpic_o66vf9.jpg',
-  short_description: "Stow away those bulky blenders and unwieldy food processors, and let the Magic Bullet work its charm!",
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490150745/Shoe-Dini-Telescopic-shoehorn_wo5zsd.jpg',
+  short_description: "Escape the problems of every shoe putting on and join the great magicians of old",
   description: "Even the best escapologists struggle to slip out of their shoes. As Harry Houdini rolls over in his grave, Gilbert Gottfried's grating voice plugs the ShoeDini, the world's first shoehorn on a stick. The 'telescoping handle' adjusts to customers of all heights, while the 'patented grip clip' keeps the shoe steady, ending your bending in the process. The ShoeDini infomercial does not try to hide its targeted demographic, appealing to 'anyone with arthritis or back pain, especially those with limited mobility.' Which might be why they chose Gottfried, whose shrieking voice can only be tolerated by those whose hearing is on the wane, to narrate.",
   funding_goal: 7500,
   end_date: '1/4/2018'
 )
 
-leisure_snuggie = Tagging.create(tag_id: 1, project_id: 1)
+dini1 = Reward.create(
+  project_id: 7,
+  amount: 15,
+  limit: 600,
+  title: "One ShoeDini",
+  description: "Get 1 ShoeDini at this low low low low low low price! So low I can't believe it",
+  delivery_date: 'MAR 2018'
+)
 
-50.times do
-  Contribution.create(amount: 10, backer_id: 2, reward_id: 1)
+dini2 = Reward.create(
+  project_id: 7,
+  amount: 40,
+  limit: 100,
+  title: "ShoeDini and Shoes",
+  description: "Get 1 ShoeDini and a pair of shoes to wear them with",
+  delivery_date: 'MAR 2018'
+)
+
+glh8 = Project.create(
+  creator_id: 18,
+  city: 'Omaha',
+  state: 'NB',
+  title: 'Good Looking Hair',
+  organization: 'Men Who Wear Hats',
+  video_url: 'https://www.youtube.com/embed/2GeF7A05zQ8?ecver=1',
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490150852/hqdefault_hhi5qy.jpg',
+  short_description: "GLH is the very latest breakthrough and contains almost life-like fibres that instantly give added body to your hair. GLH will take away that wispy look. Fill in those thin see-through spots and for men it can even cover bald spots. It's like instant hair in a can.",
+  description: "GLH is the very latest breakthrough and contains almost life-like fibres that instantly give added body to your hair. GLH will take away that wispy look. Fill in those thin see-through spots and for men it can even cover bald spots. It's like instant hair in a can.
+If you have tried everything give GLH a go. A fantastic new hair product that will end bad hair days forever. Our users make comments like 'It is just marvellous'.
+You may have seen GLH on TV including The Panel, news services and even on movies like Mighty Joe Young, Fight Club, Ten Things I Hate About You, The Green Mile and our early products Lobo and Mane in The Fabulous Baker Boys.",
+  funding_goal: 15000,
+  end_date: '11/14/2018'
+)
+
+glh1 = Reward.create(
+  project_id: 8,
+  amount: 60,
+  limit: 500,
+  title: "1 Can of GLH",
+  description: "At this tier, receive a single can of our amazing product!",
+  delivery_date: 'MAR 2018'
+)
+
+glh2 = Reward.create(
+  project_id: 8,
+  amount: 100,
+  limit: 300,
+  title: "The Complete GLH System",
+  description: "At this tier, receive the complete package of GLH products. Includes the original GLH spray, the combover comb, Dr. Maslowe's scalp oil, and a peppermint candy!",
+  delivery_date: 'MAR 2018'
+)
+
+leisure_snuggie = Tagging.create(tag_id: 7, project_id: 1)
+personal_snuggie = Tagging.create(tag_id: 1, project_id: 1)
+health_hawaii = Tagging.create(tag_id: 5, project_id: 2)
+fitness_hawaii = Tagging.create(tag_id: 4, project_id: 2)
+house_sham = Tagging.create(tag_id: 2, project_id: 3)
+house_chop = Tagging.create(tag_id: 2, project_id: 4)
+elec_chop = Tagging.create(tag_id: 3, project_id: 4)
+beauty_towel = Tagging.create(tag_id: 6, project_id: 5)
+leisure_towel = Tagging.create(tag_id: 7, project_id: 5)
+health_bullet = Tagging.create(tag_id: 5, project_id: 6)
+house_bullet = Tagging.create(tag_id: 2, project_id: 6)
+elec_bullet = Tagging.create(tag_id: 3, project_id: 6)
+personal_dini = Tagging.create(tag_id: 1, project_id: 7)
+beauty_glh = Tagging.create(tag_id: 5, project_id: 8)
+personal_glh = Tagging.create(tag_id: 1, project_id: 8)
+
+500.times do
+  Contribution.create(amount: Random.new.rand(10...150),
+                      backer_id: Random.new.rand(2...range),
+                      reward_id: Random.new.rand(1...Reward.all.length))
 end

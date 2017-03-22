@@ -48,10 +48,17 @@ class FullProject extends React.Component {
             </section>
 
             <section className='project-top-video-section'>
-              <iframe className='project-video' src={ projectImage } allowFullScreen></iframe>
+              <iframe className='project-video' src={ projectImage } frameBorder='0' allowFullScreen></iframe>
 
               <section className='project-top-details'>
-                <content>$</content>
+                <content>
+                  <NumberFormat
+                            value={ project.contributions }
+                            displayType={'text'}
+                            thousandSeparator={true}
+                            prefix={'$'}
+                  />
+                </content>
                 <content>pledged of <NumberFormat
                                       value={ project.funding_goal }
                                       displayType={'text'}
@@ -59,7 +66,8 @@ class FullProject extends React.Component {
                                       prefix={'$'}
                                     />
                 </content>
-
+                <content>{ project.backers }</content>
+                <content>backers</content>
               </section>
             </section>
 

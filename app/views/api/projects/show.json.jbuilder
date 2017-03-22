@@ -19,3 +19,20 @@ json.rewards do
     end
   end
 end
+
+backers = {}
+backers_count = 0
+@project.backers.each do |backer|
+  if backers[backer[:username]].nil?
+    backers[backer[:username]] = true
+    backers_count += 1
+  end
+end
+json.backers backers_count
+
+sum_contributions = 0
+@project.contributions.each do |contribution|
+  sum_contributions += contribution.amount
+end
+
+json.contributions sum_contributions

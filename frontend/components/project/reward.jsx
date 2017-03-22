@@ -1,31 +1,52 @@
 import React from 'react';
 import { addContribution } from '../../util/reward_api_util';
+import { withRouter } from 'react-router';
 
 class Reward extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      backer_id: this.props.currentUser.id,
+      backer_id: 0,
       reward_id: this.props.reward.id,
-      amount: 0
+      amount: 0,
+      status: true
     };
   }
 
   componentDidMount(){
+    if (this.props.currentUser) {
+      this.setState({ backer_id: this.props.currentUser.id } );
+    }
     this.setState({ amount: this.props.reward.amount });
   }
 
   changeAmount(e){
-    this.setState({ amount: e.currentTarget.value });
+      this.setState({ amount: e.currentTarget.value });
+      if (this.state.amount < this.props.reward.amount) {
+        this.state.status = false;
+      } else {
+        debugger;
+        this.state.status = true;
+      }
   }
 
   createContribution(e){
     e.preventDefault();
-    addContribution(this.state);
+    if (this.props.currentUser){
+      addContribution(this.state);
+    } else {
+      this.props.router.push(`/signup`);
+    }
   }
 
   render(){
     const { reward } = this.props;
+    let box = 'pledge-input';
+    if (this.state.status) {
+      box = 'pledge-input';
+    } else {
+      box = 'pledge-input box-red';
+    }
     return(
       <section className='reward-container'>
         <div className='amount'>Pledge ${ reward.amount }</div>
@@ -41,7 +62,7 @@ class Reward extends React.Component {
           <span>PLEDGE AMOUNT</span>
           <div className='currency'>
             <i>$</i>
-            <input type='text' value={ this.state.amount } onChange={ this.changeAmount.bind(this) } className='pledge-input'></input>
+            <input type='text' value={ this.state.amount } onChange={ this.changeAmount.bind(this) } className={ box }></input>
           </div>
         </div>
 
@@ -51,4 +72,4 @@ class Reward extends React.Component {
   }
 }
 
-export default Reward;
+export default withRouter(Reward);

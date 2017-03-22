@@ -34,7 +34,7 @@
 }
 
 .delivery {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .delivery > span {
@@ -44,7 +44,7 @@
 }
 
 .backers {
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 }
 
 .backers > span {
@@ -63,13 +63,13 @@
   font-size: 10px;
 }
 
-.currency input {
+.pledge-input {
   box-sizing: border-box;
   padding-left: 36px;
   border-color: $soft-blue;
 }
 
-.currency input:focus {
+.pledge-input:focus {
   border: 1px solid $pledge-blue;
 }
 
@@ -87,4 +87,12 @@
   font-size: 11px;
   font-family: cabin;
   font-weight: bold;
+}
+
+.box-red {
+  border: 1px solid $rose-red;
+}
+
+.box-red:focus {
+  border: 1px solid $rose-red;
 }

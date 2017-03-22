@@ -17,4 +17,8 @@ class Project < ApplicationRecord
   has_many :contributions,
            through: :rewards,
            source: :contributions
+
+  has_many :backers,
+           through: :contributions,
+           source: :backer
 end
