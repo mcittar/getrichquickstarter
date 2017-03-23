@@ -26,8 +26,8 @@ class Search extends React.Component {
     });
 
     return(
-      <section>
-        <ul className='projects-list'>
+      <section className='project-search-section'>
+        <ul className='search-projects-list'>
           { outProjects }
         </ul>
       </section>

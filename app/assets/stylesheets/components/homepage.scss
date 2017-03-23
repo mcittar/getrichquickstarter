@@ -16,6 +16,23 @@
   // background: url('http://res.cloudinary.com/ddy9eynci/image/upload/v1490126461/rsz_shutterstock_337195208-e1456810212413_lw8f2c.jpg');
   background: url('http://res.cloudinary.com/ddy9eynci/image/upload/v1490217812/4k-Colourful-Wallpaper-06_etqznz.jpg');
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-video-display-wrapper {
+  background-color: white;
+  padding: 80px 150px;;
+  opacity: .50;
+  border-radius: 10px;
+}
+
+.home-video-display {
+  margin: 15px;
+  opacity: 1;
+  color: black;
+  text-align: center;
 }
 
 .projects-header {

@@ -1,0 +1,17 @@
+@import "base/colors.scss";
+@import "base/fonts.scss";
+
+.footer-component {
+  background-color: $footer-blue;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-component > content, .footer-component > a {
+  margin-left: 50px;
+  color: white;
+  font-family: catamaran-light;
+  font-size: 14px;
+}

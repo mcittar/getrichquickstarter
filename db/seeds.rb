@@ -50,7 +50,7 @@ snuggr1 = Reward.create(
   limit: 1000,
   title: "Lil' Snuggler",
   description: "GET ONE SNUGGIE!, CHOOSE YOUR OWN COLOR! LIMITED SUPPLY ACT NOW",
-  delivery_date: 'APR 2018'
+  delivery_date: 'JAN 2018'
 )
 
 snuggr2 = Reward.create(
@@ -60,7 +60,7 @@ snuggr2 = Reward.create(
   title: "The Triple Threat",
   description: "GET THREE SNUGGIES!, CHOOSE YOUR OWN COLORS!
                 As I type these are flying of the shelves, you can't miss these deals folks!",
-  delivery_date: 'APR 2018'
+  delivery_date: 'JAN 2018'
 )
 
 snuggr3 = Reward.create(
@@ -70,7 +70,7 @@ snuggr3 = Reward.create(
   title: "Super Snuggie Special",
   description: "GET TEN SNUGGIES!, CHOOSE YOUR OWN COLORS!
                 You are basically stealing from me at this price, only a fool would pass at this opportunity!",
-  delivery_date: 'APR 2018'
+  delivery_date: 'JAN 2018'
 )
 
 hawaii_chair2 = Project.create(
@@ -83,8 +83,8 @@ hawaii_chair2 = Project.create(
   project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490202873/The-Hawaii-Chair-Top-Famous-Worst-Infomercial-Products-of-All-Time-2018_gppnzl.jpg',
   description: 'From the original factory. The Hawaii Chair brings you passive exercise while sitting indoors. The Hawaii Chair was designed to give movement back to the body’s center of mass, no matter how restrictive your lifestyle! Great if you are desk-bound for too-long hours. Great for women. Great for those with leg or foot problems, or having difficulty to exercise easily. The strong circular motion of the hips and abdomen gives intestines and stomach a rhythmic massage, for a stimulated and active feeling even while you remain sitting. Use it to enhance your program of weight reduction. Gentle massage of the lower back can ease minor aches, pains and stiffness. Steady motion with awareness can improve your balance and coordination as it gently works on your lumbar region.',
   short_description: 'A chair that will take you for a spin! Get a great workout while you work! ',
-  funding_goal: 25000,
-  end_date: '7/4/2018'
+  funding_goal: 30000,
+  end_date: '8/4/2017'
 )
 
 hawaii1 = Reward.create(
@@ -102,7 +102,7 @@ hawaii2 = Reward.create(
   limit: 1000,
   title: "The Big Kahuna",
   description: "Get 4 (!) LIMITED EDITION specialty handmane vintage one-of-a-kind chairs of the future TODAY!",
-  delivery_date: 'DEC 2018'
+  delivery_date: 'NOV 2017'
 )
 
 sham_wow3 = Project.create(
@@ -115,8 +115,8 @@ sham_wow3 = Project.create(
   project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489684298/8c8881134-shamwowguy.nbcnews-fp-1200-800_i8xdtu.jpg',
   description: "ShamWow cloths wash, dry, and polish any surface. They are like a towel, chamois and sponge all in one – except they’re extremely absorbent and can be used over and over. ShamWow towels are machine washable and bleachable, will not scratch surfaces, and will last for more than 10 years!",
   short_description: "It's like a chamois, a towel and sponge all in one! Solve any wet mess instantly and all affordable prices",
-  funding_goal: 1000000,
-  end_date: '5/14/2018'
+  funding_goal: 45000,
+  end_date: '9/14/2017'
 )
 
 sham1 = Reward.create(
@@ -125,7 +125,7 @@ sham1 = Reward.create(
   limit: 200,
   title: "ShamWow 3 Pack",
   description: "Get 3 ShamWows, guaranteed to improve your soaking efficiency by at least 30%",
-  delivery_date: 'FEB 2019'
+  delivery_date: 'DEC 2017'
 )
 
 slap_chop4 = Project.create(
@@ -138,7 +138,7 @@ slap_chop4 = Project.create(
   project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489689951/Free-Shipping-Cut-font-b-Chop-b-font-Crushing-Mashing-font-b-Slap-b-font-font_flssvw.jpg',
   description: "Slap Chop™ is a manual chopper machine that chops food when you slap the plunger. You can slap once or twice for large cuts or several times for finer cuts. You don't have to switch any blades. Today we're offering the Slap Chop™ for just $19.95 and $6.95 shipping and handling, and the Graty for cheese for FREE, just pay an additional $6.95 to cover the shipping and handling fee! Both the Slap Chop™ and the Graty for cheese comes with a limited 3 year warranty.",
   short_description: "Fantastico presents the Slap Chop! An all purpose kitchen helper that will make your life easier GUARANTEED",
-  funding_goal: 13000,
+  funding_goal: 23000,
   end_date: '10/7/2017'
 )
 
@@ -170,8 +170,8 @@ wearable_towel5 = Project.create(
   project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489697801/maxresdefault_rbbvi5.jpg',
   description: "With only three opening that are placed along the side of the towel, you can stay confidently, completely comfortably covered, while having the freedom to use your hands. So whether you’re at home, the spa, by the pool or at the beach, you can wear it, change in it, lay on it or just use it to dry off. Other modifications of the towel are well known however, all of these towels either use buttons, straps or fasteners to keep the towel from falling off. The Wearable Towel does not employ the use of any type of fastener. This novel configuration is available in in venetian red, ivory white and cobalt blue. Increase your child’s standard of living by upgrading to the Wearable Towel today.",
   short_description: "Tired of having to choose between wearing clothes or wearing a towel? Tire no more! The wearable towel will solve all of your life's problems!",
-  funding_goal: 56000,
-  end_date: '1/17/2018'
+  funding_goal: 38000,
+  end_date: '6/17/2017'
 )
 
 towel1 = Reward.create(
@@ -180,7 +180,7 @@ towel1 = Reward.create(
   limit: 400,
   title: "The Towel Itself",
   description: "Receive 1 wearable towel! Available in most sizes and colors!",
-  delivery_date: 'OCT 2018'
+  delivery_date: 'JUL 2017'
 )
 
 towel2 = Reward.create(
@@ -189,7 +189,7 @@ towel2 = Reward.create(
   limit: 100,
   title: "Towels of a Feather",
   description: "Receive 4 wearable towel! Available in most sizes and colors!",
-  delivery_date: 'OCT 2018'
+  delivery_date: 'JUL 2017'
 )
 
 magic_bullet6 = Project.create(
@@ -202,17 +202,17 @@ magic_bullet6 = Project.create(
   project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1489707800/index-cta-mb-desktop_iuxomo.jpg',
   short_description: "Stow away those bulky blenders and unwieldy food processors, and let the Magic Bullet work its charm!",
   description: "Handy versatile and easy to use, the Magic Bullet takes up minimal counter space while showcasing maximum speed and versatility. With its unique design and compact size, the Magic Bullet chops, mixes, blends, whips, grinds and more in less time than it takes to assemble standard kitchen appliances. And with a wide array of dishwasher-safe attachments, clean up is as easy as it gets. The secret to the Magic Bullet's time-saving efficiency is its specially designed blade and unique bullet shape. These features work together to quickly and forcefully circulate food back into the Cyclonic Cutting Zone®, allowing the Magic Bullet to do virtually any food prep task in seconds.",
-  funding_goal: 4000,
-  end_date: '3/24/2018'
+  funding_goal: 29000,
+  end_date: '8/24/2017'
 )
 
-towel1 = Reward.create(
+bullet1 = Reward.create(
   project_id: 6,
   amount: 45,
   limit: 4000,
   title: "The Towel Itself",
   description: "Receive 1 wearable towel! Available in most sizes and colors!",
-  delivery_date: 'OCT 2018'
+  delivery_date: 'SEP 2017'
 )
 
 shoe_dini7 = Project.create(
@@ -223,9 +223,9 @@ shoe_dini7 = Project.create(
   organization: 'Sellers with Sole',
   video_url: 'https://www.youtube.com/embed/9EZHVokj1lI?ecver=1',
   project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490202570/Calzador_Extensible._Shoe_Dini_3_mwq2my.jpg',
-  short_description: "Escape the problems of every shoe putting on and join the great magicians of old",
+  short_description: "Escape the problems of every day shoe putting on and join the great magicians of old",
   description: "Even the best escapologists struggle to slip out of their shoes. As Harry Houdini rolls over in his grave, Gilbert Gottfried's grating voice plugs the ShoeDini, the world's first shoehorn on a stick. The 'telescoping handle' adjusts to customers of all heights, while the 'patented grip clip' keeps the shoe steady, ending your bending in the process. The ShoeDini infomercial does not try to hide its targeted demographic, appealing to 'anyone with arthritis or back pain, especially those with limited mobility.' Which might be why they chose Gottfried, whose shrieking voice can only be tolerated by those whose hearing is on the wane, to narrate.",
-  funding_goal: 7500,
+  funding_goal: 36000,
   end_date: '1/4/2018'
 )
 
@@ -259,8 +259,8 @@ glh8 = Project.create(
   description: "GLH is the very latest breakthrough and contains almost life-like fibres that instantly give added body to your hair. GLH will take away that wispy look. Fill in those thin see-through spots and for men it can even cover bald spots. It's like instant hair in a can.
 If you have tried everything give GLH a go. A fantastic new hair product that will end bad hair days forever. Our users make comments like 'It is just marvellous'.
 You may have seen GLH on TV including The Panel, news services and even on movies like Mighty Joe Young, Fight Club, Ten Things I Hate About You, The Green Mile and our early products Lobo and Mane in The Fabulous Baker Boys.",
-  funding_goal: 15000,
-  end_date: '11/14/2018'
+  funding_goal: 18000,
+  end_date: '9/14/2018'
 )
 
 glh1 = Reward.create(
@@ -269,7 +269,7 @@ glh1 = Reward.create(
   limit: 500,
   title: "1 Can of GLH",
   description: "At this tier, receive a single can of our amazing product!",
-  delivery_date: 'MAR 2018'
+  delivery_date: 'DEC 2017'
 )
 
 glh2 = Reward.create(
@@ -278,7 +278,45 @@ glh2 = Reward.create(
   limit: 300,
   title: "The Complete GLH System",
   description: "At this tier, receive the complete package of GLH products. Includes the original GLH spray, the combover comb, Dr. Maslowe's scalp oil, and a peppermint candy!",
-  delivery_date: 'MAR 2018'
+  delivery_date: 'DEC 2017'
+)
+
+oxy9 = Project.create(
+  creator_id: 37,
+  city: 'San Francisco',
+  state: 'CA',
+  title: 'OxiClean',
+  organization: 'The Kleeners',
+  video_url: 'https://www.youtube.com/embed/ZTpXh33Mbeg?ecver=1',
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490245095/oxiclean_ko0gqd.jpg',
+  short_description: "Feel the power of OxiClean! Get it today",
+  description: "The solution to your toughest stains—indoors and out
+Life can get messy—but who wants to spend all day scrubbing dirt and stains? Luckily, OxiClean™ Versatile Stain Remover is the answer to almost every stain-fighting need you have—in laundry, and beyond! When used as directed, its oxygen-based water-activated formula safely gets tough dirt and grime out of clothes, carpets and nearly any surface in your home.
+Use as a presoak for your laundry before you wash your clothes—there’s hardly a clothing stain that can’t be eradicated with OxiClean™ Versatile Stain Remover.
+Add a scoop to every load—it works in both High Efficiency (HE) and non-HE washing machines to get your clothes extra clean. Just put your detergent into the cup, and add OxiClean™ directly to the drum.
+Dissolve OxiClean™ versatile powder in water and blot away carpet and upholstery stains.
+Make a solution and pretreat with a squeeze bottle to remove stains on contact.
+It’s chlorine-free, color safe and available in Regular and Free (scent and dye-free) varieties.",
+  funding_goal: 21000,
+  end_date: '5/22/2017'
+)
+
+oxy1 = Reward.create(
+  project_id: 9,
+  amount: 20,
+  limit: 3000,
+  title: "The Oxi Experience",
+  description: "Receive the one the only, the original OxiClean! It will clean everything!",
+  delivery_date: 'JULY 2017'
+)
+
+oxy2 = Reward.create(
+  project_id: 9,
+  amount: 50,
+  limit: 300,
+  title: "The Complete Oxi Experience",
+  description: "With this bundle stains will be gone from your life forever. All will be envious of the immaculate vision that has become your abode",
+  delivery_date: 'JULY 2017'
 )
 
 leisure_snuggie = Tagging.create(tag_id: 7, project_id: 1)
@@ -296,6 +334,8 @@ elec_bullet = Tagging.create(tag_id: 3, project_id: 6)
 personal_dini = Tagging.create(tag_id: 1, project_id: 7)
 beauty_glh = Tagging.create(tag_id: 5, project_id: 8)
 personal_glh = Tagging.create(tag_id: 1, project_id: 8)
+house_oxi = Tagging.create(tag_id: 2, project_id: 9)
+
 
 500.times do
   Contribution.create(amount: Random.new.rand(10...150),

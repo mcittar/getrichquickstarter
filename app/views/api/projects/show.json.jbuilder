@@ -16,6 +16,7 @@ json.rewards do
       json.limit reward.limit
       json.description reward.description
       json.delivery_date reward.delivery_date
+      json.backers reward.contributions.count
     end
   end
 end
@@ -38,5 +39,7 @@ json.contributions sum_contributions
 
 new_goal = @project.funding_goal.to_f
 percentage = ((sum_contributions / new_goal) * 100)
-percentage = percentage > 100 ? '100' : percentage.round.to_s
-json.percentage percentage
+line_percentage = percentage > 100 ? '100' : percentage.round.to_s
+percentage_show = percentage.round.to_s
+json.percentage_show percentage_show
+json.line_percentage line_percentage

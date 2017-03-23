@@ -36,10 +36,10 @@ class ProjectBlurb extends React.Component {
 
           <div className='blurb-footer'>
             <h3><i className="fa fa-map-marker"></i>{ project.city }, { project.state }</h3>
-            <span className='line-span'><Line percent={ project.percentage } strokeWidth='2' strokeColor='#2BDE73'/></span>
+            <span className='line-span'><Line percent={ project.line_percentage } strokeWidth='2' strokeColor='#2BDE73'/></span>
             <div className='blurb-footer-footer'>
               <div>
-                <h3><strong>{ project.percentage }%</strong></h3>
+                <h3><strong>{ project.percentage_show }%</strong></h3>
                 <h3>funded</h3>
               </div>
               <div className='blurb-footer-pledged'>

@@ -22,7 +22,16 @@ class HomepageIndex extends React.Component {
     return(
       <section className='home'>
 
-        <section className='home-video-container'></section>
+        <section className='home-video-container'>
+          <section className='home-video-display-wrapper'>
+            <h1 className='home-video-display'>
+              Welcome to GetRichQuickStarter!
+            </h1>
+            <h1 className='home-video-display'>
+              Browse our amazing wares
+            </h1>
+          </section>
+        </section>
 
         <div className='projects-header'>Popular Projects</div>
 

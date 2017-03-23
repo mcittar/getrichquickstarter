@@ -25,7 +25,6 @@ class Project < ApplicationRecord
   def self.search(word)
     search = word.split("-").join(" ")
     self.where("lower(title) LIKE ?", "%#{search.downcase}%")
-    # self.where("? IN (lower(title))", "%#{word.downcase}%")
   end
 
 end

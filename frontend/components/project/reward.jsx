@@ -54,7 +54,7 @@ class Reward extends React.Component {
         <div className='description'>{ reward.description }</div>
 
         <div className='delivery'><span>ESTIMATED DELIVERY</span><br></br>{ reward.delivery_date }</div>
-        <div className='backers'><span>2345 backers</span></div>
+        <div className='backers'><span>{ reward.backers } backers</span></div>
 
         <div className='reward-divider'>-----------------------------------------------------------------</div>
 
