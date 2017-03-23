@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import RewardContainer from './reward_container';
 import NumberFormat from 'react-number-format';
+import { Line } from 'rc-progress';
 
 class FullProject extends React.Component {
   constructor(props){
@@ -51,12 +52,15 @@ class FullProject extends React.Component {
               <iframe className='project-video' src={ projectImage } frameBorder='0' allowFullScreen></iframe>
 
               <section className='project-top-details'>
+                <content className='project-line-container'>
+                  <Line percent={ project.percentage } strokeWidth='2' strokeColor='#2BDE73'/>
+                </content>
                 <content>
                   <NumberFormat
-                            value={ project.contributions }
-                            displayType={'text'}
-                            thousandSeparator={true}
-                            prefix={'$'}
+                    value={ project.contributions }
+                    displayType={'text'}
+                    thousandSeparator={true}
+                    prefix={'$'}
                   />
                 </content>
                 <content>pledged of <NumberFormat

@@ -34,5 +34,9 @@ sum_contributions = 0
 @project.contributions.each do |contribution|
   sum_contributions += contribution.amount
 end
-
 json.contributions sum_contributions
+
+new_goal = @project.funding_goal.to_f
+percentage = ((sum_contributions / new_goal) * 100)
+percentage = percentage > 100 ? '100' : percentage.round.to_s
+json.percentage percentage

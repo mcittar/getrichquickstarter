@@ -4,10 +4,17 @@ import ProjectBlurb from '../homepage/project_blurb';
 class Search extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      projects: []
+    };
   }
 
   componentDidMount(){
     this.props.getProjects(this.props.phrase);
+  }
+
+  componentWillReceiveProps(nextProps){
+    this.props.getProjects(nextProps.phrase);
   }
 
   render(){

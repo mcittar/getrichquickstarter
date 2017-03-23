@@ -50,8 +50,8 @@
   margin: 18px;
   display: flex;
   align-self: center;
-  height: 460px;
-  width: 312px;
+  height: 440px;
+  width: 318px;
 }
 
 .top-wrapper {
@@ -96,7 +96,39 @@
   flex: 1;
   width: 100%;
   align-self: flex-end;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.blurb-footer h3, .blurb-footer > div {
+  width: 90%;
+}
+
+.blurb-footer div {
+  text-align: left;
+}
+
+.blurb-footer-footer {
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.line-span {
+  width: 90%;
+}
+
+.blurb-footer-pledged {
+  margin-left: 10px;
+}
+
+.blurb-footer-days {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.fa-map-marker {
+  margin-right: 5px;
 }

@@ -23,7 +23,8 @@ class Project < ApplicationRecord
            source: :backer
 
   def self.search(word)
-    self.where("lower(title) LIKE ?", "%#{word.downcase}%")
+    search = word.split("-").join(" ")
+    self.where("lower(title) LIKE ?", "%#{search.downcase}%")
     # self.where("? IN (lower(title))", "%#{word.downcase}%")
   end
 
