@@ -24,10 +24,12 @@ class Project < ApplicationRecord
 
   def self.search(word)
     search = word.split("-").join(" ")
+
     tags = Tag.where(tag: search)
     if !tags[0].nil?
-      Tag.where(tag: search)[0].projects
+      tags = Tag.where(tag: search)[0].projects
     end
+
     titles = self.where("lower(title) LIKE ?", "%#{search.downcase}%")
     tags + titles
   end

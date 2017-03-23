@@ -10,6 +10,7 @@ class FullProject extends React.Component {
   }
 
   componentDidMount(){
+    this.setState({ backers: this.props.project.contributions });
     window.scrollTo(0, 0);
     this.props.getProject();
   }

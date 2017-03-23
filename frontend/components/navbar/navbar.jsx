@@ -7,8 +7,27 @@ class NavBar extends React.Component {
     super(props);
     this.state = {
       search_status: false,
-      search_value: ""
+      search_value: "",
+      search_css: 'search-cancel out'
     };
+  }
+
+  componentWillReceiveProps(nextProps){
+    if (nextProps.currentUser !== this.props.currentUser) {
+      if(nextProps.currentUser) {
+        this.setState({ search_css: 'search-cancel in' });
+      } else {
+        this.setState({ search_css: 'search-cancel out' });
+      }
+    }
+  }
+
+  componentDidMount(){
+    if(this.props.currentUser) {
+      this.setState({ search_css: 'search-cancel in' });
+    } else {
+      this.setState({ search_css: 'search-cancel out' });
+    }
   }
 
   userLogout() {
@@ -38,6 +57,7 @@ class NavBar extends React.Component {
       rightNav = (
           <span className='logout hvr-underline-reveal' onClick={ this.userLogout.bind(this) }><span>Logout</span></span>
       );
+
     } else {
       rightNav = (
         <ul>
@@ -61,7 +81,7 @@ class NavBar extends React.Component {
               <input onChange={ this.updateSearch.bind(this) } placeholder='Search' type='text'></input>
             </form>
           </li>
-          <li className='search-cancel' onClick={ this.toggleSearch.bind(this) }><i className="fa fa-times"></i></li>
+          <li className={ this.state.search_css } onClick={ this.toggleSearch.bind(this) }><i className="fa fa-times"></i></li>
         </ul>
 
       </ReactCSSTransitionGroup>

@@ -97,3 +97,25 @@
 .box-red:focus {
   border: 1px solid $rose-red;
 }
+
+.reward-modal {
+  border: 1px solid $dark-gray;
+  background-color: $softest-blue;
+  border-radius: 10px;
+  width: 700px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -350px;
+  margin-top: -200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-family: sans-serif;
+  font-size: 16px;
+}

@@ -9,7 +9,7 @@ class Search extends React.Component {
     };
   }
 
-  componentDidMount(){
+  componentWillMount(){
     this.props.getProjects(this.props.phrase);
   }
 

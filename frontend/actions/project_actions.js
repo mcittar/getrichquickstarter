@@ -8,6 +8,11 @@ export const scrapeProject = (id) => dispatch => {
   );
 };
 
+export const postContribution = (contribution) => dispatch => (
+  APIUtil.addContribution(contribution)
+    .then((project) => (dispatch(receiveProject(project))))
+);
+
 export const receiveProject =  project => {
   return {
     type: RECEIVE_PROJECT,

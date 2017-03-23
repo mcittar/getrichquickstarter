@@ -1,7 +1,7 @@
 import React from 'react';
-import { addContribution } from '../../util/reward_api_util';
 import { withRouter } from 'react-router';
 import Modal from 'react-modal';
+import NumberFormat from 'react-number-format';
 
 class Reward extends React.Component {
   constructor(props){
@@ -10,8 +10,11 @@ class Reward extends React.Component {
       backer_id: 0,
       reward_id: this.props.reward.id,
       amount: 0,
-      status: true
+      status: true,
+      modalStatus: false
     };
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   componentWillMount() {
@@ -25,20 +28,32 @@ class Reward extends React.Component {
     this.setState({ amount: this.props.reward.amount });
   }
 
-  changeAmount(e){
+  changeAmount(e) {
       this.setState({ amount: e.currentTarget.value });
       if (this.state.amount < this.props.reward.amount) {
         this.state.status = false;
       } else {
-        debugger;
         this.state.status = true;
       }
+  }
+
+  openModal() {
+   this.setState({modalStatus: true});
+ }
+
+  closeModal() {
+    this.setState({modalStatus: false});
   }
 
   createContribution(e){
     e.preventDefault();
     if (this.props.currentUser){
-      addContribution(this.state);
+      if (this.state.amount >= this.props.reward.amount){
+        this.props.postContribution(this.state)
+          .then(() => {
+            this.openModal();
+          });
+      }
     } else {
       this.props.router.push(`/signup`);
     }
@@ -57,12 +72,20 @@ class Reward extends React.Component {
       <section className='reward-container'>
 
         <Modal
-          isOpen={false}
+          isOpen={this.state.modalStatus}
           contentLabel="Modal"
-          onRequestClose={() => false}
+          onRequestClose={this.closeModal}
+          className='reward-modal'
         >
-          <h1>Modal Content</h1>
-          <p>Etc.</p>
+          <content className='modal-title'>You have pledged </content>
+          <NumberFormat
+            value={ this.state.amount }
+            displayType={'text'}
+            thousandSeparator={true}
+            prefix={'$'}
+            className='amount'
+          />
+        <content className='modal-title'>Thank you for your contribution!</content>
         </Modal>
 
         <div className='amount'>Pledge ${ reward.amount }</div>
