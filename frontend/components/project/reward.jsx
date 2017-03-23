@@ -1,6 +1,7 @@
 import React from 'react';
 import { addContribution } from '../../util/reward_api_util';
 import { withRouter } from 'react-router';
+import Modal from 'react-modal';
 
 class Reward extends React.Component {
   constructor(props){
@@ -11,6 +12,10 @@ class Reward extends React.Component {
       amount: 0,
       status: true
     };
+  }
+
+  componentWillMount() {
+     Modal.setAppElement('body');
   }
 
   componentDidMount(){
@@ -47,8 +52,19 @@ class Reward extends React.Component {
     } else {
       box = 'pledge-input box-red';
     }
+
     return(
       <section className='reward-container'>
+
+        <Modal
+          isOpen={false}
+          contentLabel="Modal"
+          onRequestClose={() => false}
+        >
+          <h1>Modal Content</h1>
+          <p>Etc.</p>
+        </Modal>
+
         <div className='amount'>Pledge ${ reward.amount }</div>
         <div className='title'>{ reward.title }</div>
         <div className='description'>{ reward.description }</div>

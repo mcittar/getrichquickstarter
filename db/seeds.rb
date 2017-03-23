@@ -337,7 +337,7 @@ personal_glh = Tagging.create(tag_id: 1, project_id: 8)
 house_oxi = Tagging.create(tag_id: 2, project_id: 9)
 
 
-500.times do
+1000.times do
   Contribution.create(amount: Random.new.rand(10...150),
                       backer_id: Random.new.rand(2...range),
                       reward_id: Random.new.rand(1...Reward.all.length))

@@ -17,6 +17,11 @@ class FullProject extends React.Component {
   render(){
     const { project } = this.props;
 
+    let dateEnd = new Date(project.end_date);
+    let dateStart = new Date();
+    let timeDiff = Math.abs(dateStart.getTime() - dateEnd.getTime());
+    let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
     let projectRewards;
     if (project.rewards) {
       const rewardKeys = Object.keys(project.rewards);
@@ -53,41 +58,55 @@ class FullProject extends React.Component {
 
               <section className='project-top-details'>
                 <content className='project-line-container'>
-                  <Line percent={ project.percentage } strokeWidth='2' strokeColor='#2BDE73'/>
+                  <Line percent={ project.line_percentage } strokeWidth='2' strokeColor='#2BDE73'/>
                 </content>
-                <content>
+                <content className='full-project-current-funding-spacer'>
                   <NumberFormat
                     value={ project.contributions }
                     displayType={'text'}
                     thousandSeparator={true}
                     prefix={'$'}
+                    className='full-project-current-funding'
                   />
                 </content>
-                <content>pledged of <NumberFormat
+                <content className='full-project-total-funding'>pledged of <NumberFormat
                                       value={ project.funding_goal }
                                       displayType={'text'}
                                       thousandSeparator={true}
                                       prefix={'$'}
-                                    />
-                </content>
-                <content>{ project.backers }</content>
-                <content>backers</content>
+                                    /> goal
+                                </content>
+                <content className='full-project-total-backers'>{ project.backers }</content>
+                <content className='backers-backers'>backers</content>
+                <content className='full-project-days-left'>{ diffDays }</content>
+                <content className='days-left'>days left</content>
               </section>
             </section>
 
           </section>
 
 
-          <section className='project-body'>
-            <section className='project-body-description'>
-              { project.description }
+          <section className='full-project-body'>
+
+            <section className='full-project-body-wrapper'>
+
+              <section className='project-body-description-wrapper'>
+                <section className='full-project-about'>About this project</section>
+                <section className='project-body-description'>
+                  { project.description }
+                </section>
+              </section>
+
+              <section className='full-project-rewards-wrapper'>
+                <content className='full-project-support'>Support this project</content>
+                <ul className='project-body-rewards'>
+                  { projectRewards }
+                </ul>
+              </section>
+
             </section>
 
-            <ul className='project-body-rewards'>
-              <content>Support this project</content>
-              { projectRewards }
-            </ul>
-          </section>
+            </section>
 
       </section>
     );

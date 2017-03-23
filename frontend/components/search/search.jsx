@@ -14,7 +14,9 @@ class Search extends React.Component {
   }
 
   componentWillReceiveProps(nextProps){
-    this.props.getProjects(nextProps.phrase);
+    if (nextProps.phrase !== this.props.phrase) {
+      this.props.getProjects(nextProps.phrase);
+    }
   }
 
   render(){
@@ -27,9 +29,16 @@ class Search extends React.Component {
 
     return(
       <section className='project-search-section'>
-        <ul className='search-projects-list'>
-          { outProjects }
-        </ul>
+        <header className='search-result-display'>
+          <h1>Search results for: { this.props.phrase.split("-").join(" ") }</h1>
+        </header>
+
+        <content className='projects-container'>
+          <ul className='projects-list'>
+            { outProjects }
+          </ul>
+        </content>
+
       </section>
     );
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Discover extends React.Component {
   constructor(props){
@@ -14,7 +15,7 @@ class Discover extends React.Component {
     let allTags;
     if (this.props.tags.length > 0){
       allTags = this.props.tags.map(tag => {
-        return <li key={ tag.tag }>{ tag.tag }</li>;
+        return <li key={ tag.tag }><Link to={ `search/${tag.tag.split(" ").join("-")}` }>{ tag.tag }</Link></li>;
       });
     }
 

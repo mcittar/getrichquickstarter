@@ -15,19 +15,19 @@ class NavBar extends React.Component {
     this.props.logout();
   }
 
-  toggleSearch() {
+  toggleSearch(e) {
     const newStatus = !this.state.search_status;
     this.setState({ search_status: newStatus });
   }
 
   updateSearch(e) {
     e.preventDefault();
-      this.setState({ search_status: e.currentTarget.value });
+      this.setState({ search_value: e.currentTarget.value });
   }
 
   submitSearch(e) {
     e.preventDefault();
-    this.props.router.push(`/search/${this.state.search_status.split(" ").join("-")}`);
+    this.props.router.push(`/search/${this.state.search_value.split(" ").join("-")}`);
     this.toggleSearch();
   }
 

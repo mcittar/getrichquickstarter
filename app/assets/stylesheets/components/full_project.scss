@@ -10,7 +10,7 @@
   box-shadow: inset 0px 7px 16px -3px rgba(50, 50, 50, 0.15);
 }
 
-.full-project-section span {
+.full-title-description span {
   font-family: catamaran-light;
   font-weight: bold;
 }
@@ -31,7 +31,7 @@
 .project-top {
   padding-bottom: 60px;
   margin-bottom: 20px;
-  width: 75%;
+  width: 65%;
   display: flex;
   flex-direction: column;
 }
@@ -72,7 +72,7 @@
 }
 
 .project-video {
-  width: 730px;
+  width: 780px;
   height: 450px;
 }
 
@@ -88,21 +88,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.project-body {
+.full-project-body {
   border-top: 1px solid $light-gray;
   background-color: white;
-  flex: 1;
   display: flex;
   justify-content: center;
   height: 100%;
+  margin-bottom: 20px;
+}
+
+.full-project-body-wrapper {
+ width: 60%;
+ display: flex;
 }
 
 .project-body-description {
   margin-top: 30px;
-  width: 45%;
+  width: 100%;
+  min-width: 350px;
   font-size: 16px;
   margin-top: 15px;
   color: $darker-gray;
@@ -121,4 +126,56 @@
 
 .project-line-container {
   width: 100%;
+}
+
+.full-project-current-funding {
+  color: $hover-green;
+  font-family: sans-serif;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.full-project-current-funding-spacer {
+  margin-top: 10px;
+}
+
+.full-project-total-funding {
+  margin-top: 3px;
+}
+
+.full-project-total-funding, .full-project-total-funding > span {
+  font-family: sans-serif;
+  color: $dark-gray;
+  font-size: 13px;
+}
+
+.full-project-total-backers, .full-project-days-left {
+  margin-top: 18px;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.backers-backers, .days-left {
+  font-family: sans-serif;
+  color: $dark-gray;
+  font-size: 13px;
+}
+
+.full-project-support, .full-project-about {
+  margin-top: 24px;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.project-body-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-project-rewards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
