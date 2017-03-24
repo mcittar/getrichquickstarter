@@ -384,5 +384,25 @@ elec_mask = Tagging.create(tag_id: 3, project_id: 10)
 1200.times do
   Contribution.create(amount: Random.new.rand(10...150),
                       backer_id: Random.new.rand(2...range),
-                      reward_id: Random.new.rand(1...Reward.all.length))
+                      reward_id: Random.new.rand(1...Reward.all.length)
+                      )
+end
+
+comments = [
+  "I enjoyed this product and am not a robot",
+  "This worked for me and it can work for you!",
+  "I am in no way associated with these people and can say this product 100% works",
+  "So great, works well",
+  "Is this worth it?",
+  "Can I get a refund if it breaks?",
+  "This right here is the real deal",
+  "I will never have to buy another product ever again!",
+  "Ok"
+]
+
+100.times do
+  Comment.create(author_id: Random.new.rand(2...range),
+                 project_id: Random.new.rand(1...10),
+                 body: comments[Random.new.rand(0...comments.length)]
+                 )
 end

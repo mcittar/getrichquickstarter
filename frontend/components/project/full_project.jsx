@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import RewardContainer from './reward_container';
 import NumberFormat from 'react-number-format';
 import { Line } from 'rc-progress';
+import { withRouter } from 'react-router';
 import ProjectComment from './comment';
 
 class FullProject extends React.Component {
@@ -34,6 +35,8 @@ class FullProject extends React.Component {
       this.props.postComment(comment).then(() => {
         this.setState({ comment: "" });
       });
+    } else {
+      this.props.router.push(`/signup`);
     }
   }
 
@@ -161,4 +164,4 @@ class FullProject extends React.Component {
   }
 }
 
-export default FullProject;
+export default withRouter(FullProject);
