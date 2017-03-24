@@ -15,7 +15,13 @@ class Discover extends React.Component {
     let allTags;
     if (this.props.tags.length > 0){
       allTags = this.props.tags.map(tag => {
-        return <li key={ tag.tag }><Link to={ `search/${tag.tag.split(" ").join("-")}` }>{ tag.tag }</Link></li>;
+        return (
+          <li className='discover-tag' key={ tag.tag }>
+            <Link className='discover-tag-link' to={ `search/${tag.tag.split(" ").join("-")}` }>
+              { tag.tag }
+            </Link>
+          </li>
+        );
       });
     }
 
