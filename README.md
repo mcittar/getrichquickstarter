@@ -45,5 +45,4 @@ GetRichQuickStarter is a crowd sourcing application inspired by KickStarter. It 
   * Add additional search parameters (Location, Company, etc...)
   * Flesh out form creation page, including a rich text editor allowing for videos and images to embedded in main description field
 
-  [readme]: docs/README.md
-  ##### See the development [README](readme) for a list of components, wireframes, sample state, and DB schema.
+  ##### See the development [README](docs/README.md) for a list of components, wireframes, sample state, and DB schema.
