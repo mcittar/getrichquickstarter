@@ -1,0 +1,28 @@
+@import "base/colors.scss";
+
+.full-comment-wrapper {
+  margin-top: 30px;
+}
+
+.comment-author, .comment-body {
+  margin-left: 50px;
+  font-family: sans-serif;
+}
+
+.comment-header {
+  display: flex;
+}
+
+.comment-date {
+  color: $gray;
+  margin-left: 25px;
+}
+
+.comment-author {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-body {
+  margin-top: 8px;
+}

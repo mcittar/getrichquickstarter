@@ -3,16 +3,38 @@ import ReactDOM from 'react-dom';
 import RewardContainer from './reward_container';
 import NumberFormat from 'react-number-format';
 import { Line } from 'rc-progress';
+import ProjectComment from './comment';
 
 class FullProject extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      comment: ""
+    };
+    this.postComment = this.postComment.bind(this);
   }
 
   componentDidMount(){
     this.setState({ backers: this.props.project.contributions });
     window.scrollTo(0, 0);
     this.props.getProject();
+  }
+
+  updateComment(e){
+    this.setState({ comment: e.currentTarget.value });
+  }
+
+  postComment(){
+    if(this.props.currentUser){
+      let comment = {
+        project_id: this.props.project.id,
+        author_id: this.props.currentUser.id,
+        body: this.state.comment
+      };
+      this.props.postComment(comment).then(() => {
+        this.setState({ comment: "" });
+      });
+    }
   }
 
   render(){
@@ -36,6 +58,14 @@ class FullProject extends React.Component {
       projectImage = project.video_url;
     } else {
       projectImage = project.project_pic;
+    }
+
+    let projectComments;
+    if (project.comments){
+      projectComments = project.comments.map(comment => {
+        return <ProjectComment key={ comment.id } author={ comment.author } currentUser={ this.props.currentUser } body={ comment.body }/>;
+      });
+      projectComments.reverse();
     }
 
     return(
@@ -96,6 +126,21 @@ class FullProject extends React.Component {
                 <section className='project-body-description'>
                   { project.description }
                 </section>
+
+                <section className='full-project-comments'>
+
+                    <form onSubmit={ this.postComment }  className='project-comment-form'>
+                      <content>Leave a comment</content>
+                      <textarea value={ this.state.comment }  onChange={ this.updateComment.bind(this) } className='new-comment-input'></textarea>
+                      <button className='comment-submit-button'>Post Comment</button>
+                    </form>
+
+                    <ul className='project-comments-list'>
+                      { projectComments }
+                    </ul>
+
+                </section>
+
               </section>
 
               <section className='full-project-rewards-wrapper'>
@@ -108,6 +153,8 @@ class FullProject extends React.Component {
             </section>
 
             </section>
+
+
 
       </section>
     );

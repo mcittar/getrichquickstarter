@@ -21,6 +21,12 @@ json.rewards do
   end
 end
 
+json.comments @project.comments.each do |comment|
+  json.id comment.id
+  json.author comment.author.username
+  json.body comment.body
+end
+
 backers = {}
 backers_count = 0
 @project.backers.each do |backer|

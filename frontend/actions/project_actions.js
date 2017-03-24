@@ -13,6 +13,11 @@ export const postContribution = (contribution) => dispatch => (
     .then((project) => (dispatch(receiveProject(project))))
 );
 
+export const postComment = (comment) => dispatch => (
+  APIUtil.addComment(comment)
+    .then((project) => (dispatch(receiveProject(project))))
+);
+
 export const receiveProject =  project => {
   return {
     type: RECEIVE_PROJECT,

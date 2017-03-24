@@ -10,3 +10,4 @@ GetRichQuickStarter is a crowd sourcing application inspired by KickStarter. It 
   * Pledge on Projects
   * Search for Projects
   * Discover Projects based on Category
+  * Post Comments on Projects

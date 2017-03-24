@@ -1,20 +1,20 @@
 import { connect } from 'react-redux';
-import { scrapeProject } from '../../actions/project_actions';
+import { scrapeProject, postComment } from '../../actions/project_actions';
 import FullProject from './full_project';
 
 const mapStateToProps = (state, ownProps) => {
 
   return {
     id: ownProps.params.projectId,
-    project: state.project
+    project: state.project,
+    currentUser: state.session.currentUser
   };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    getProject: () => dispatch(scrapeProject(ownProps.params.projectId))
-  };
-};
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  postComment: (comment) => dispatch(postComment(comment)),
+  getProject: () => dispatch(scrapeProject(ownProps.params.projectId))
+});
 
 export default connect(
   mapStateToProps,

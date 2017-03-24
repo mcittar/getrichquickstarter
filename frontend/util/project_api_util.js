@@ -12,3 +12,11 @@ export const addContribution = contribution => {
     data: {contribution}
   });
 };
+
+export const addComment = comment => {
+  return $.ajax({
+    method: 'POST',
+    url: 'api/comments',
+    data: {comment}
+  });
+};

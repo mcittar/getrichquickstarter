@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :tags, only: [:index]
     resources :contributions, only: [:create]
     resources :searches, only: [:index]
+    resources :comments, only: [:create]
   end
 
 end
