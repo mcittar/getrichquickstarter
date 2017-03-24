@@ -26,7 +26,7 @@ GetRichQuickStarter is a crowd sourcing application inspired by KickStarter. It 
   * Landing page features a graphical welcome and displays all available projects
   * User can login, signup, or use demo account from navbar.
   * Clicking search icon toggles search mode, allows project searches
-  ![Home Page](/images/home.png)
+  ![Home Page](https://github.com/mcittar/getrichquickstarter/blob/master/app/assets/images/home.png)
 
 ### Project Detail Page
   * Dynamically shows current details about a project
