@@ -208,10 +208,19 @@ magic_bullet6 = Project.create(
 
 bullet1 = Reward.create(
   project_id: 6,
-  amount: 45,
+  amount: 80,
   limit: 4000,
-  title: "The Towel Itself",
-  description: "Receive 1 wearable towel! Available in most sizes and colors!",
+  title: "The Original Magic Bullet",
+  description: "Receive 1 Magic Bullet sooper juicer!",
+  delivery_date: 'SEP 2017'
+)
+
+bullet2 = Reward.create(
+  project_id: 6,
+  amount: 400,
+  limit: 40,
+  title: "The Silver Bullet",
+  description: "Receive a limited edition Magic Bullet made entirely out of 100% silver! Blessed by priests, it can juice and destroy werewolves. VALUE!",
   delivery_date: 'SEP 2017'
 )
 
