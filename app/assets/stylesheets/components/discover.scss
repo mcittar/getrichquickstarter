@@ -7,10 +7,9 @@
 }
 
 .discover-section-wrapper {
-  margin: 50px 70px;
+  margin: 80px 150px;
   display: flex;
   flex-direction: column;
-
   width: 100%;
 }
 
@@ -18,15 +17,15 @@
   font-size: 26px;
   color: $hover-green;
   border-bottom: 1px solid $light-gray;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-bottom: 10px;
 }
 
 .discover-tag {
-  margin-bottom: 6px;  
+  margin-bottom: 15px;
 }
 
 .discover-tag-link {
   font-family: sans-serif;
-  font-size: 19px;
+  font-size: 36px;
 }

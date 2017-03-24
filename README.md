@@ -1,24 +1,12 @@
-# README
+# GetRichQuickStarter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Live Version](https://getrichquickstarter.herokuapp.com/#/)
 
-Things you may want to cover:
+GetRichQuickStarter is a crowd sourcing application inspired by KickStarter. It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend. It was build end-to-end in 2 weeks while I was at App Academy.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#UX Features
+  * Browse Projects
+  * Review Project Details
+  * Pledge on Projects
+  * Search for Projects
+  * Discover Projects based on Category

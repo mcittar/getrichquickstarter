@@ -29,8 +29,8 @@ class Search extends React.Component {
     if (outProjects.length < 1) {
       outProjects = (
         <li className='no-result'>
-          <li className='sorry'>Sorry, there were no results for your search</li>
-          <div className='here-it-is'>have a potato!</div>
+          <div className='sorry'>Sorry, there were no results for your search</div>
+          <div className='here-it-is'>Have a potato!</div>
           <img className='potato' src='http://res.cloudinary.com/ddy9eynci/image/upload/v1490327927/potatoes-clip-art-at-clker-com-vector-clip-art-online-royalty-free-Tf4mHh-clipart_eyzxmy.png'></img>
         </li>
       );

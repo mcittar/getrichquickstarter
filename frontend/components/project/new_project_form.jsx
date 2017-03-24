@@ -35,8 +35,7 @@ class NewProjectForm extends React.Component {
   }
 
   submit(){
-    this.props.createProject(this.state)
-    .then(project => this.redirectOnSuccess(Object.keys(project.project)[0]));
+    this.props.createProject(this.state);
   }
 
   redirectOnSuccess(id) {
@@ -146,7 +145,7 @@ class NewProjectForm extends React.Component {
                 </li>
                 <li className='funding-goal-select'>
                   <div>Funding Goal</div>
-                  <input onChange={ this.updateAttributes('funding_goal') }></input>
+                  <input type='number' onChange={ this.updateAttributes('funding_goal') }></input>
                 </li>
                 <li className='description-select'>
                   <div>Full Description</div>

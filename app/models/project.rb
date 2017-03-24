@@ -7,7 +7,7 @@ class Project < ApplicationRecord
              foreign_key: :creator_id
 
   has_many :rewards
-
+  has_many :comments
   has_many :taggings
 
   has_many :tags,

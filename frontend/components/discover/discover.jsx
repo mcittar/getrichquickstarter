@@ -30,7 +30,7 @@ class Discover extends React.Component {
         <section className='discover-section-wrapper'>
 
           <h1>Categories</h1>
-          <ul>
+          <ul className='discover-all-tags-wrapper'>
             { allTags }
           </ul>
 
