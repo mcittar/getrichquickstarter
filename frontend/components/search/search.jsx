@@ -22,10 +22,19 @@ class Search extends React.Component {
   render(){
     const { projects } = this.props;
     const keys = Object.keys(this.props.projects);
-    const outProjects = keys.map(key => {
+    let outProjects = keys.map(key => {
       let smallProject = projects[key];
       return <li className='project-blurb-li-wrapper' key={ key }><ProjectBlurb project={ smallProject } /></li>;
     });
+    if (outProjects.length < 1) {
+      outProjects = (
+        <li className='no-result'>
+          <li className='sorry'>Sorry, there were no results for your search</li>
+          <div className='here-it-is'>have a potato!</div>
+          <img className='potato' src='http://res.cloudinary.com/ddy9eynci/image/upload/v1490327927/potatoes-clip-art-at-clker-com-vector-clip-art-online-royalty-free-Tf4mHh-clipart_eyzxmy.png'></img>
+        </li>
+      );
+    }
 
     return(
       <section className='project-search-section'>

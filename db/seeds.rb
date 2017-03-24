@@ -319,6 +319,39 @@ oxy2 = Reward.create(
   delivery_date: 'JULY 2017'
 )
 
+mask10 = Project.create(
+  creator_id: 45,
+  city: 'Bangor',
+  state: 'ME',
+  title: 'Rejuvenique Electric Facial Mask',
+  organization: 'Company Who Does Not Steal Faces',
+  video_url: 'https://www.youtube.com/embed/SXcYVh-W14E?ecver=1',
+  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490316138/arts-foundfootage2-9-18_dtvbrh.jpg',
+  short_description: "This mask will make you feel like a new you! Work out those saggy face muscles and look beautiful",
+  description: "By delivering a light pulsation from a 9-volt battery (included), the 26 gold-plated contact points inside this facemask gradually tone the skin and reduce the appearance of wrinkling. The mask's control unit has a knob that adjusts the pulsation intensity to suit individual preference. Though the mask is made of hard plastic, you can adjust the headband and extend key contact points by rotating them so you can fit the mask to any face size, both male and female.
+A booklet clearly explains how to use the mask, and a video is included for additional instruction. The basics, however, are easy to grasp. The 26 contact points cover 12 zones of the face. When it's turned on, the mask activates the contact points in a particular zone for about 20 seconds, and then proceeds though the other 11 zones one by one, repeating the sequence four times. A full treatment takes about 15 minutes, and you may apply two treatments each day. To ensure proper skin interaction, each contact point needs a dab of toning gel. Two ounces of gel are included, but you can purchase more separately, along with additional contact points if the originals wear down. The mask carries a one-year warranty against defects.",
+  funding_goal: 17000,
+  end_date: '7/22/2017'
+)
+
+mask1 = Reward.create(
+  project_id: 10,
+  amount: 35,
+  limit: 3000,
+  title: "The Mask of your Dreams",
+  description: "This mask will change your life! At this low price it will definitely not psychologically scar your loved ones.",
+  delivery_date: 'AUG 2017'
+)
+
+mask2 = Reward.create(
+  project_id: 10,
+  amount: 100,
+  limit: 200,
+  title: "Prince of Darkness",
+  description: "Receive the Rejuvenique Mask and a spooky black robe. Great for a Halloween outfit!",
+  delivery_date: 'AUG 2017'
+)
+
 leisure_snuggie = Tagging.create(tag_id: 7, project_id: 1)
 personal_snuggie = Tagging.create(tag_id: 1, project_id: 1)
 health_hawaii = Tagging.create(tag_id: 5, project_id: 2)
@@ -335,9 +368,11 @@ personal_dini = Tagging.create(tag_id: 1, project_id: 7)
 beauty_glh = Tagging.create(tag_id: 5, project_id: 8)
 personal_glh = Tagging.create(tag_id: 1, project_id: 8)
 house_oxi = Tagging.create(tag_id: 2, project_id: 9)
+beauty_mask = Tagging.create(tag_id: 6, project_id: 10)
+elec_mask = Tagging.create(tag_id: 3, project_id: 10)
 
 
-1000.times do
+1200.times do
   Contribution.create(amount: Random.new.rand(10...150),
                       backer_id: Random.new.rand(2...range),
                       reward_id: Random.new.rand(1...Reward.all.length))

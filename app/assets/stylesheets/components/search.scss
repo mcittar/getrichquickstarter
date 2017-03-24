@@ -37,3 +37,27 @@
   background-color: white;
   border-radius: 5px;
 }
+
+.no-result {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sorry, .here-it-is {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.here-it-is {
+  margin-bottom: 50px;
+}
+
+.potato {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 200px;
+}
