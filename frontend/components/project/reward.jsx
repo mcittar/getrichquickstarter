@@ -77,15 +77,31 @@ class Reward extends React.Component {
           onRequestClose={this.closeModal}
           className='reward-modal'
         >
-          <content className='modal-title'>You have pledged </content>
-          <NumberFormat
-            value={ this.state.amount }
-            displayType={'text'}
-            thousandSeparator={true}
-            prefix={'$'}
-            className='amount'
-          />
-        <content className='modal-title'>Thank you for your contribution!</content>
+          <i onClick={ this.closeModal }className="fa fa-times modal-close"/>
+
+          <section className='modal-success-wrapper'>
+            <content className='modal-success'>SUCCESS</content>
+          </section>
+
+          <section className='modal-bottom-half'>
+            <section>
+              <i className="fa fa-money"></i>
+            </section>
+
+            <section className='modal-content-wrapper'>
+              <content className='modal-title'>You have pledged </content>
+              <NumberFormat
+                value={ this.state.amount }
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+                className='amount'
+              />
+              <content className='modal-title'>Thank you for your contribution!</content>
+            </section>
+          </section>
+
+
         </Modal>
 
         <div className='amount'>Pledge ${ reward.amount }</div>

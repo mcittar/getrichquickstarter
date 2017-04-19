@@ -13,12 +13,6 @@
   border-color: $pledge-blue;
 }
 
-.amount {
-  color: $pledge-blue;
-  padding-bottom: 12px;
-  font-size: 200px;
-}
-
 .backer-button {
   font-family: sans-serif;
   color: white;
@@ -99,23 +93,69 @@
 }
 
 .reward-modal {
-  border: 1px solid $dark-gray;
+  border: 1px solid $pledge-blue;
   background-color: $softest-blue;
   border-radius: 10px;
-  width: 700px;
-  height: 400px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   left: 50%;
   top: 50%;
-  margin-left: -350px;
+  margin-left: -200px;
   margin-top: -200px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.amount {
+  font-family: sans-serif;
+  color: $pledge-blue;
+  // padding-bottom: 6px;
+  font-size: 80px;
+}
+
+.modal-bottom-half {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-wrapper {
+  display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 
 .modal-title {
   font-family: sans-serif;
   font-size: 16px;
+}
+
+.modal-success {
+  font-family: sans-serif;
+  font-size: 48px;
+  color: $strong-green;
+}
+
+.modal-success-wrapper {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.modal-close {
+  position: relative;
+  left: 185px;
+  top: 5px;
+  color: $pledge-blue;
+}
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+.fa-money {
+  font-size: 50px;
+  color: $strong-green;
 }
