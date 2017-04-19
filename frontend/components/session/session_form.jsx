@@ -86,9 +86,9 @@ class SessionForm extends React.Component {
             { name }
             <input placeholder="Email" value={ this.state.email } onChange={ this.updateAttributes('email') }/>
             <input type='password' value={ this.state.password } placeholder="Password" onChange={ this.updateAttributes('password') }/>
-            <button className='auth-demo-button' onClick={ this.demoSubmit.bind(this) }>Use Demo Account</button>
-            <span> - or -</span>
             <button className='auth-submit' onClick={ this.handleSubmit.bind(this) }>{ button }</button>
+            <span> - or -</span>
+            <button className='auth-demo-button' onClick={ this.demoSubmit.bind(this) }>Use Demo Account</button>
         </form>
       </section>
     );
