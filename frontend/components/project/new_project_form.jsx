@@ -161,9 +161,7 @@ class NewProjectForm extends React.Component {
 
 
 
-              <div className='button-wrapper'>
-                <button onClick={ this.submit.bind(this) }>Create project</button>
-              </div>
+
             </form>
 
             <section className="project-create-rewards-container">
@@ -191,7 +189,7 @@ class NewProjectForm extends React.Component {
                           />
                       </li>
                       <li>
-                        <div>Amount</div>
+                        <div>Value</div>
                         <input
                             className="project-create-rewards-input"
                             value={ reward.amount }
@@ -210,6 +208,11 @@ class NewProjectForm extends React.Component {
               </div>
 
             </section>
+
+            <div className='button-wrapper'>
+              <button onClick={ this.submit.bind(this) }>Create project</button>
+            </div>
+            
           </section>
       </div>
     );
