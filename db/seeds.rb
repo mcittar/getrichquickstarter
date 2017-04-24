@@ -80,7 +80,7 @@ hawaii_chair2 = Project.create(
   title: 'The Hawaii Chair',
   organization: 'Society of Chair Enrichment and Media',
   video_url: 'https://www.youtube.com/embed/E9_amg-Aos4?ecver=1',
-  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490202873/The-Hawaii-Chair-Top-Famous-Worst-Infomercial-Products-of-All-Time-2018_gppnzl.jpg',
+  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1490202873/The-Hawaii-Chair-Top-Famous-Worst-Infomercial-Products-of-All-Time-2018_gppnzl.jpg',
   description: 'From the original factory. The Hawaii Chair brings you passive exercise while sitting indoors. The Hawaii Chair was designed to give movement back to the body’s center of mass, no matter how restrictive your lifestyle! Great if you are desk-bound for too-long hours. Great for those with leg or foot problems, or having difficulty to exercise easily. The strong circular motion of the hips and abdomen gives intestines and stomach a rhythmic massage, for a stimulated and active feeling even while you remain sitting. Use it to enhance your program of weight reduction. Gentle massage of the lower back can ease minor aches, pains and stiffness. Steady motion with awareness can improve your balance and coordination as it gently works on your lumbar region.',
   short_description: 'A chair that will take you for a spin! Get a great workout while you work! ',
   funding_goal: 30000,
@@ -231,7 +231,7 @@ shoe_dini7 = Project.create(
   title: 'ShoeDini',
   organization: 'Sellers with Sole',
   video_url: 'https://www.youtube.com/embed/9EZHVokj1lI?ecver=1',
-  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490202570/Calzador_Extensible._Shoe_Dini_3_mwq2my.jpg',
+  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1490202570/Calzador_Extensible._Shoe_Dini_3_mwq2my.jpg',
   short_description: "Escape the problems of every day shoe putting on and join the great magicians of old",
   description: "Even the best escapologists struggle to slip out of their shoes. As Harry Houdini rolls over in his grave, Gilbert Gottfried's grating voice plugs the ShoeDini, the world's first shoehorn on a stick. The 'telescoping handle' adjusts to customers of all heights, while the 'patented grip clip' keeps the shoe steady, ending your bending in the process. The ShoeDini infomercial does not try to hide its targeted demographic, appealing to 'anyone with arthritis or back pain, especially those with limited mobility.' Which might be why they chose Gottfried, whose shrieking voice can only be tolerated by those whose hearing is on the wane, to narrate.",
   funding_goal: 36000,
@@ -263,7 +263,7 @@ glh8 = Project.create(
   title: 'Good Looking Hair',
   organization: 'Men Who Wear Hats',
   video_url: 'https://www.youtube.com/embed/2GeF7A05zQ8?ecver=1',
-  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490150852/hqdefault_hhi5qy.jpg',
+  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1490150852/hqdefault_hhi5qy.jpg',
   short_description: "GLH is the very latest breakthrough and contains almost life-like fibres that instantly give added body to your hair. GLH will take away that wispy look. Fill in those thin see-through spots and for men it can even cover bald spots. It's like instant hair in a can.",
   description: "GLH is the very latest breakthrough and contains almost life-like fibres that instantly give added body to your hair. GLH will take away that wispy look. Fill in those thin see-through spots and for men it can even cover bald spots. It's like instant hair in a can.
 If you have tried everything give GLH a go. A fantastic new hair product that will end bad hair days forever. Our users make comments like 'It is just marvellous'.
@@ -297,7 +297,7 @@ oxy9 = Project.create(
   title: 'OxiClean',
   organization: 'The Kleeners',
   video_url: 'https://www.youtube.com/embed/ZTpXh33Mbeg?ecver=1',
-  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490245095/oxiclean_ko0gqd.jpg',
+  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1490245095/oxiclean_ko0gqd.jpg',
   short_description: "Feel the power of OxiClean! Get it today",
   description: "The solution to your toughest stains—indoors and out
 Life can get messy—but who wants to spend all day scrubbing dirt and stains? Luckily, OxiClean™ Versatile Stain Remover is the answer to almost every stain-fighting need you have—in laundry, and beyond! When used as directed, its oxygen-based water-activated formula safely gets tough dirt and grime out of clothes, carpets and nearly any surface in your home.
@@ -335,7 +335,7 @@ mask10 = Project.create(
   title: 'Rejuvenique Electric Facial Mask',
   organization: 'Company Who Does Not Steal Faces',
   video_url: 'https://www.youtube.com/embed/SXcYVh-W14E?ecver=1',
-  project_pic: 'http://res.cloudinary.com/ddy9eynci/image/upload/v1490316138/arts-foundfootage2-9-18_dtvbrh.jpg',
+  project_pic: 'https://res.cloudinary.com/ddy9eynci/image/upload/v1490316138/arts-foundfootage2-9-18_dtvbrh.jpg',
   short_description: "This mask will make you feel like a new you! Work out those saggy face muscles and look beautiful",
   description: "By delivering a light pulsation from a 9-volt battery (included), the 26 gold-plated contact points inside this facemask gradually tone the skin and reduce the appearance of wrinkling. The mask's control unit has a knob that adjusts the pulsation intensity to suit individual preference. Though the mask is made of hard plastic, you can adjust the headband and extend key contact points by rotating them so you can fit the mask to any face size, both male and female.
 A booklet clearly explains how to use the mask, and a video is included for additional instruction. The basics, however, are easy to grasp. The 26 contact points cover 12 zones of the face. When it's turned on, the mask activates the contact points in a particular zone for about 20 seconds, and then proceeds though the other 11 zones one by one, repeating the sequence four times. A full treatment takes about 15 minutes, and you may apply two treatments each day. To ensure proper skin interaction, each contact point needs a dab of toning gel. Two ounces of gel are included, but you can purchase more separately, along with additional contact points if the originals wear down. The mask carries a one-year warranty against defects.",
