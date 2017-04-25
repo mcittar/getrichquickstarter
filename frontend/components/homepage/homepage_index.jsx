@@ -25,10 +25,7 @@ class HomepageIndex extends React.Component {
         <section className='home-video-container'>
           <section className='home-video-display-wrapper'>
             <h1 className='home-video-display'>
-              Welcome to GetRichQuickStarter!
-            </h1>
-            <h1 className='home-video-display'>
-              Browse our amazing wares
+              Crowdfund Your Favorite "As Seen On TV" Products
             </h1>
           </section>
         </section>

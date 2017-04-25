@@ -15,8 +15,7 @@ class FullProject extends React.Component {
     this.postComment = this.postComment.bind(this);
   }
 
-  componentDidMount(){
-    this.setState({ backers: this.props.project.contributions });
+  componentWillMount(){
     window.scrollTo(0, 0);
     this.props.getProject();
   }
@@ -132,10 +131,10 @@ class FullProject extends React.Component {
 
                 <section className='full-project-comments'>
 
-                    <form onSubmit={ this.postComment }  className='project-comment-form'>
+                    <form className='project-comment-form'>
                       <content>Leave a comment</content>
                       <textarea value={ this.state.comment }  onChange={ this.updateComment.bind(this) } className='new-comment-input'></textarea>
-                      <button className='comment-submit-button'>Post Comment</button>
+                      <button onClick={ this.postComment} className='comment-submit-button'>Post Comment</button>
                     </form>
 
                     <ul className='project-comments-list'>

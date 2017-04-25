@@ -41,7 +41,7 @@ I believe this campaign is genius because it reaches out to both those who love 
 The real beauty of this contest: Snuggie will no doubt generate more attention and nab some fun commercial ideas. Only truly brave companies have the guts and creativity to embrace mockery and turn it into a promotion of their product. Certainly other businesses can follow this example, not only in terms of multimedia usage but also by Allstar’s willingness and ability to turn the negative into a positive.',
   short_description: 'A Revolutionary blanket with sleeves! You never have to leave the comfort of a warm blanket ever again',
   funding_goal: 30000,
-  end_date: '12/14/2017'
+  end_date: '8/14/2017'
 )
 
 snuggr1 = Reward.create(
@@ -235,7 +235,7 @@ shoe_dini7 = Project.create(
   short_description: "Escape the problems of every day shoe putting on and join the great magicians of old",
   description: "Even the best escapologists struggle to slip out of their shoes. As Harry Houdini rolls over in his grave, Gilbert Gottfried's grating voice plugs the ShoeDini, the world's first shoehorn on a stick. The 'telescoping handle' adjusts to customers of all heights, while the 'patented grip clip' keeps the shoe steady, ending your bending in the process. The ShoeDini infomercial does not try to hide its targeted demographic, appealing to 'anyone with arthritis or back pain, especially those with limited mobility.' Which might be why they chose Gottfried, whose shrieking voice can only be tolerated by those whose hearing is on the wane, to narrate.",
   funding_goal: 36000,
-  end_date: '1/4/2018'
+  end_date: '11/4/2017'
 )
 
 dini1 = Reward.create(
@@ -269,7 +269,7 @@ glh8 = Project.create(
 If you have tried everything give GLH a go. A fantastic new hair product that will end bad hair days forever. Our users make comments like 'It is just marvellous'.
 You may have seen GLH on TV including The Panel, news services and even on movies like Mighty Joe Young, Fight Club, Ten Things I Hate About You, The Green Mile and our early products Lobo and Mane in The Fabulous Baker Boys.",
   funding_goal: 18000,
-  end_date: '9/14/2018'
+  end_date: '1/14/2018'
 )
 
 glh1 = Reward.create(
