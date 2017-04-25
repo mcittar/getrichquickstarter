@@ -30,7 +30,7 @@ class Reward extends React.Component {
 
   changeAmount(e) {
       this.setState({ amount: e.currentTarget.value });
-      if (this.state.amount < this.props.reward.amount) {
+      if (e.currentTarget.value < this.props.reward.amount) {
         this.state.status = false;
       } else {
         this.state.status = true;
@@ -121,7 +121,7 @@ class Reward extends React.Component {
           </div>
         </div>
 
-        <button className='backer-button' onClick={ this.createContribution.bind(this) }>Continue</button>
+        <button className='backer-button' onClick={ this.createContribution.bind(this) }>Buy</button>
       </section>
     );
   }

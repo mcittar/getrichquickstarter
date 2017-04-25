@@ -307,7 +307,7 @@ Dissolve OxiClean™ versatile powder in water and blot away carpet and upholste
 Make a solution and pretreat with a squeeze bottle to remove stains on contact.
 It’s chlorine-free, color safe and available in Regular and Free (scent and dye-free) varieties.",
   funding_goal: 21000,
-  end_date: '5/22/2017'
+  end_date: '6/22/2017'
 )
 
 oxy1 = Reward.create(
