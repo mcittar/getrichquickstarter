@@ -24,7 +24,8 @@ class FullProject extends React.Component {
     this.setState({ comment: e.currentTarget.value });
   }
 
-  postComment(){
+  postComment(e){
+    e.preventDefault();
     if(this.props.currentUser){
       let comment = {
         project_id: this.props.project.id,

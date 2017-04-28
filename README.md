@@ -32,12 +32,13 @@ GetRichQuickStarter is a crowd sourcing application inspired by KickStarter. It 
   ![Project](https://res.cloudinary.com/ddy9eynci/image/upload/v1493398448/Screen_Shot_2017-04-28_at_9.52.00_AM_phm8kw.png)
   ![Project Details](https://res.cloudinary.com/ddy9eynci/image/upload/v1493398575/Screen_Shot_2017-04-28_at_9.55.27_AM_dfshf5.png)
   * Dynamically shows current details about a project
-  * Allows user to pledge into rewards and leaves comments
+  * Allows user to pledge into rewards and leave comments
   * Display a video or picture and description of the project
 
 ### Create a New Project
+  ![New Project](https://res.cloudinary.com/ddy9eynci/image/upload/v1493398831/Screen_Shot_2017-04-28_at_9.59.55_AM_bpu4v0.png)
   * Allows Users to create new projects and rewards
-  * Connects to cloudinary API, allowing images to be hosted and retrieved online
+  * Connects to Cloudinary API, allowing images to be hosted and retrieved online
 
 ### Discover
   * Provides search by Category feature
