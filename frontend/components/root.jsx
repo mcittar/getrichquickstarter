@@ -14,6 +14,7 @@ const Root = ({ store }) => {
   const _redirectIfLoggedIn = (nextState, replace) => {
     if (store.getState().session.currentUser) {
       replace('/');
+      window.scrollTo(0, 0);
     }
   };
 
@@ -21,6 +22,7 @@ const Root = ({ store }) => {
     const currentUser = store.getState().session.currentUser;
     if (!currentUser) {
       replace('/login');
+      window.scrollTo(0, 0);
     }
   };
 

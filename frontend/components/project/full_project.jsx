@@ -36,6 +36,7 @@ class FullProject extends React.Component {
         this.setState({ comment: "" });
       });
     } else {
+      window.scrollTo(0, 0);
       this.props.router.push(`/signup`);
     }
   }

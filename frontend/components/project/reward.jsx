@@ -55,6 +55,7 @@ class Reward extends React.Component {
           });
       }
     } else {
+      window.scrollTo(0, 0);
       this.props.router.push(`/signup`);
     }
   }
