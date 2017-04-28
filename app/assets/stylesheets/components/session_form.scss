@@ -31,6 +31,7 @@
 }
 
 .auth-submit {
+  font-family: sans-serif;
   color: white;
   margin-top: 50px;
 }
@@ -47,6 +48,10 @@
 .auth-form > span {
   color: $light-gray;
   font-style: italic;
+}
+
+.auth-form > input {
+  font-family: sans-serif;
 }
 
 .auth-errors {

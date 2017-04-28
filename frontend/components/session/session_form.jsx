@@ -80,9 +80,9 @@ class SessionForm extends React.Component {
       <section className='auth-form-section'>
         <form className='auth-form'>
           <h2 className='auth-title'>{ title }</h2>
-          <section>
-            <ul className='auth-errors'>{ errors }</ul>
-          </section>
+            <section>
+              <ul className='auth-errors'>{ errors }</ul>
+            </section>
             { name }
             <input placeholder="Email" value={ this.state.email } onChange={ this.updateAttributes('email') }/>
             <input type='password' value={ this.state.password } placeholder="Password" onChange={ this.updateAttributes('password') }/>
