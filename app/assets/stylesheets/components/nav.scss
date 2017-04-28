@@ -17,7 +17,7 @@
 .main-nav, .search-nav {
 	display: flex;
 	justify-content: space-between;
-	height: 70px;
+	height: 75px;
 }
 
 .left-nav,
@@ -48,7 +48,7 @@
 	cursor: pointer;
 	font-family: $sans-serif;
 	font-weight: bold;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .left-nav > li {
@@ -112,7 +112,7 @@
 	font-family: logo;
 	display: flex;
 	align-items: center;
-	font-size: 32px;
+	font-size: 36px;
 }
 
 .left-logo {
