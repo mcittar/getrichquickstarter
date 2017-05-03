@@ -12,9 +12,6 @@
 .home-video-container {
   height: 600px;
   width: 100%;
-  // background-image: image-url('city-overview.jpg');
-  // background: url('http://res.cloudinary.com/ddy9eynci/image/upload/v1490126262/o-RAINING-MONEY-facebook_kxxhlc.jpg');
-  // background: url('http://res.cloudinary.com/ddy9eynci/image/upload/v1490126461/rsz_shutterstock_337195208-e1456810212413_lw8f2c.jpg');
   background: url('https://res.cloudinary.com/ddy9eynci/image/upload/v1493342120/naomi-hebert-188443-min_hdar5m.jpg');
   background-size: cover;
   display: flex;
@@ -24,7 +21,7 @@
 
 .home-video-display-wrapper {
   background-color: $light-gray;
-  padding: 80px 150px;;
+  padding: 80px 150px;
   opacity: .70;
   border-radius: 10px;
 }
