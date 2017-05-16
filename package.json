@@ -31,10 +31,11 @@
     "webpack": "^2.2.1"
   },
   "devDependencies": {
+    "babel-jest": "^20.0.1",
     "jest": "^20.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "postinstall": "webpack"
   },
   "repository": {
@@ -47,5 +48,11 @@
   "bugs": {
     "url": "https://github.com/mcittar/fullstack_proposal/issues"
   },
-  "homepage": "https://github.com/mcittar/fullstack_proposal#readme"
+  "homepage": "https://github.com/mcittar/fullstack_proposal#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ]
+  }
 }
