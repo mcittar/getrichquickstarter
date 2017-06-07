@@ -10,7 +10,6 @@ gem 'cloudinary'
 gem 'figaro'
 gem 'faker'
 gem 'bcrypt'
-gem 'pry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use postgresql as the database for Active Record
@@ -44,6 +43,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
