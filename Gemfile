@@ -6,10 +6,13 @@ git_source(:github) do |repo_name|
 end
 
 gem 'annotate'
-gem 'cloudinary'
-gem 'figaro'
-gem 'faker'
 gem 'bcrypt'
+gem 'capybara'
+gem 'cloudinary'
+gem 'faker'
+gem 'figaro'
+gem 'guard-rspec'
+gem 'launchy'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use postgresql as the database for Active Record
@@ -40,10 +43,12 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
-  gem 'pry-rails'
   gem 'better_errors'
   gem 'binding_of_caller'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
